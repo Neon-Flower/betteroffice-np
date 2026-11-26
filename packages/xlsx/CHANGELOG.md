@@ -1,5 +1,14 @@
 # @betteroffice/xlsx
 
+## 0.6.2
+
+### Patch Changes
+
+- 372e1e3: Printed sheets keep their stored row heights when the default row height is below the font's natural height, so they paginate closer to Excel.
+- 3bafc1a: The spreadsheet editor uses bundled fallbacks for missing glyphs in scripts such as Hebrew, Thai and Devanagari, with immediate retries after an editor closes mid-load. PNG exports also load script fallbacks for characters introduced by number formats.
+- Updated dependencies [e163044]
+  - @betteroffice/fonts@0.5.1
+
 ## 0.6.1
 
 ## 0.6.0

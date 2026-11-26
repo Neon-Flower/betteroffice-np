@@ -1,5 +1,13 @@
 # @betteroffice/docx
 
+## 0.6.2
+
+### Patch Changes
+
+- 9cd8351: `repackDocx` and Rust `Document::save` return the original package for an unchanged model when the save leaves its core properties, content types and relationships as they were. `repackDocxWithWarnings` names the parts rewritten after a model edit.
+- Updated dependencies [e163044]
+  - @betteroffice/fonts@0.5.1
+
 ## 0.6.1
 
 ## 0.6.0

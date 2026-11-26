@@ -1,5 +1,13 @@
 # @betteroffice/rust-crates
 
+## 0.6.1
+
+### Patch Changes
+
+- 9cd8351: `repackDocx` and Rust `Document::save` return the original package for an unchanged model when the save leaves its core properties, content types and relationships as they were. `repackDocxWithWarnings` names the parts rewritten after a model edit.
+- a42798b: Documents saved on Windows are now byte-identical to the same documents saved on Linux and macOS. Saved content does not change.
+- 372e1e3: Printed sheets keep their stored row heights when the default row height is below the font's natural height, so they paginate closer to Excel.
+
 ## 0.6.0
 
 ### Minor Changes

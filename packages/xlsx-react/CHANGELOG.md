@@ -1,5 +1,17 @@
 # @betteroffice/xlsx-react
 
+## 0.6.2
+
+### Patch Changes
+
+- 3bafc1a: The spreadsheet editor uses bundled fallbacks for missing glyphs in scripts such as Hebrew, Thai and Devanagari, with immediate retries after an editor closes mid-load. PNG exports also load script fallbacks for characters introduced by number formats.
+- Updated dependencies [e163044]
+- Updated dependencies [372e1e3]
+- Updated dependencies [3bafc1a]
+  - @betteroffice/fonts@0.5.1
+  - @betteroffice/xlsx@0.6.2
+  - @betteroffice/xlsx-i18n@0.6.2
+
 ## 0.6.1
 
 ### Patch Changes

@@ -8,7 +8,7 @@ const index = readFileSync(resolve(import.meta.dir, 'index.ts'), 'utf8');
 test('sheet visibility type is exported from the root', () => {
   const visibility: XlsxSheetVisibility[] = ['visible', 'hidden', 'veryHidden', 'unknown'];
   expect(visibility).toHaveLength(4);
-  expect(index).toMatch(/export\s+type\s*\{[^}]*\bXlsxSheetVisibility\b[^}]*\}\s*from\s*['"]@betteroffice\/xlsx['"]/);
+  expect(index).toMatch(/export\s+type\s*\{[^}]*\bXlsxSheetVisibility\b[^}]*\}\s*from\s*['"]@neonflower\/sheet-core['"]/);
 });
 
 

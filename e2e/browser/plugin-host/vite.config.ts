@@ -89,15 +89,15 @@ export default defineConfig({
       { find: /^@betteroffice\/pptx$/, replacement: resolve(root, 'packages/pptx/src/index.ts') },
       { find: /^@betteroffice\/pptx\/(.*)$/, replacement: resolve(root, 'packages/pptx/src/$1') },
       {
-        find: /^@betteroffice\/xlsx-react$/,
+        find: /^@neonflower\/sheet-react$/,
         replacement: resolve(root, 'packages/xlsx-react/src/index.ts'),
       },
       {
-        find: /^@betteroffice\/xlsx-i18n$/,
+        find: /^@neonflower\/sheet-i18n$/,
         replacement: resolve(root, 'packages/xlsx-i18n/src/index.ts'),
       },
-      { find: /^@betteroffice\/xlsx$/, replacement: resolve(root, 'packages/xlsx/src/index.ts') },
-      { find: /^@betteroffice\/xlsx\/(.*)$/, replacement: resolve(root, 'packages/xlsx/src/$1') },
+      { find: /^@neonflower\/sheet-core$/, replacement: resolve(root, 'packages/xlsx/src/index.ts') },
+      { find: /^@neonflower\/sheet-core\/(.*)$/, replacement: resolve(root, 'packages/xlsx/src/$1') },
     ],
   },
   css: {

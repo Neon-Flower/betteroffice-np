@@ -9,7 +9,7 @@ import type {
   XlsxReadRequest,
   XlsxReadResult,
   XlsxValidationResult,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 import type { CommandState } from '../../../../shared/host-contracts/commands';
 import type {
   MaybePromise,

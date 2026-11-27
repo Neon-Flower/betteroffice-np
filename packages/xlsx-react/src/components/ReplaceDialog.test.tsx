@@ -3,7 +3,7 @@ import { afterAll, afterEach, expect, test } from 'bun:test';
 import { fireEvent } from '@testing-library/react';
 import type {
   XlsxEditRequest, XlsxEditResult, XlsxFindRequest, XlsxFindResult, XlsxValidationResult,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 import { LocaleProvider } from '../i18n';
 import { ReplaceDialog, type ReplaceDialogApi, type ReplaceDialogTarget } from './ReplaceDialog';
 

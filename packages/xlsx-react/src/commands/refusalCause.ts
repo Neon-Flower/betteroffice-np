@@ -1,5 +1,5 @@
-import type { TranslationKey } from '@betteroffice/xlsx-i18n';
-import type { CommandStatus } from '@betteroffice/xlsx/worker';
+import type { TranslationKey } from '@neonflower/sheet-i18n';
+import type { CommandStatus } from '@neonflower/sheet-core/worker';
 
 /** What a refused structural edit would have broken, as the refusal banner names it. */
 export type XlsxRefusalCause = 'chart' | 'table' | 'pivot' | 'fill' | 'other';

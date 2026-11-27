@@ -1,6 +1,6 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { afterAll, afterEach, expect, mock, spyOn, test } from 'bun:test';
-import type { DisplayList, TextCmd } from '@betteroffice/xlsx';
+import type { DisplayList, TextCmd } from '@neonflower/sheet-core';
 import { defaultFontPainterModule, useDefaultFonts } from './useDefaultFonts';
 
 const ownsDom = !GlobalRegistrator.isRegistered;

@@ -1,5 +1,5 @@
-import { fromTsv, toTsv } from '@betteroffice/xlsx';
-import type { CellInputEdit, CellRange } from '@betteroffice/xlsx';
+import { fromTsv, toTsv } from '@neonflower/sheet-core';
+import type { CellInputEdit, CellRange } from '@neonflower/sheet-core';
 import { WorkerInputRefusal } from './commands/workerInputErrors';
 
 const MAX_CLIPBOARD_CELLS = 100_000;

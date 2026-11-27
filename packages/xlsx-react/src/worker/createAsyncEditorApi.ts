@@ -1,7 +1,7 @@
 import type {
   Proposal, ProposalEdit, WorkbookHandle, XlsxPngOptions, XlsxPngTarget, XlsxReadRequest, XlsxReadResult, XlsxFindRequest,
   XlsxFindResult, XlsxEditRequest, XlsxEditResult, XlsxValidationResult,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 import { editorExportFaces } from '../useDefaultFonts';
 import type { XlsxPluginDocumentAccess } from '../plugins/createPluginDocumentAccess';
 import type { XlsxAdmission } from '../plugins/createPluginClients';
@@ -12,7 +12,7 @@ import { commandReason } from '../commands/evaluate';
 import { PeerlessWorkerCommandRefusal, type PeerlessWorkerInputCoordinator } from '../commands/peerlessWorkerInputCoordinator';
 import type { WorkerEditorApiBridge } from './createWorkerEditorApi';
 import type { PeerlessWorkbookSession } from './usePeerlessSessionWorkbook';
-import type { AsyncCollaborationReplica } from '@betteroffice/xlsx/collaboration';
+import type { AsyncCollaborationReplica } from '@neonflower/sheet-core/collaboration';
 
 export interface XlsxProposalRequest {
   agentId: string;

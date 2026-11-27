@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { CSSProperties, PointerEvent as ReactPointerEvent } from 'react';
-import type { CellAddr, CellRange } from '@betteroffice/xlsx';
+import type { CellAddr, CellRange } from '@neonflower/sheet-core';
 
 /** Side length of the visible handle and of its pointer hit target. */
 export const FILL_HANDLE_SIZE = 8;

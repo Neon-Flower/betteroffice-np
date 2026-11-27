@@ -1,5 +1,5 @@
 /**
- * Shared locale data, types, and runtime helpers for @betteroffice/xlsx-react.
+ * Shared locale data, types, and runtime helpers for @neonflower/sheet-react.
  *
  * @packageDocumentation
  * @public

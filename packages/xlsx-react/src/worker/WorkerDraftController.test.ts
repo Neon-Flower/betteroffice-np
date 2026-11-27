@@ -1,7 +1,7 @@
 import { afterAll, afterEach, describe, expect, mock, test } from 'bun:test';
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { createElement } from 'react';
-import type { Direction, Selection } from '@betteroffice/xlsx';
+import type { Direction, Selection } from '@neonflower/sheet-core';
 import type { PeerlessWorkerInputCoordinator, PeerlessWorkerPendingInput } from '../commands/peerlessWorkerInputCoordinator';
 import { WorkerDraftController, type WorkerNativeDraft } from './WorkerDraftController';
 

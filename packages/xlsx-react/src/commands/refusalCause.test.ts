@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test';
-import { createT, en } from '@betteroffice/xlsx-i18n';
-import type { CommandStatus } from '@betteroffice/xlsx/worker';
+import { createT, en } from '@neonflower/sheet-i18n';
+import type { CommandStatus } from '@neonflower/sheet-core/worker';
 import { commandReason } from './evaluate';
 import { PeerlessWorkerCommandRefusal } from './peerlessWorkerInputCoordinator';
 import { REFUSAL_CAUSE_KEYS, refusalCause } from './refusalCause';

@@ -8,7 +8,7 @@ import { buildWorkerStubs } from '../../../scripts/worker-stub';
 const source = '../../../packages/xlsx';
 const dist = '../dist';
 const external = ['node:*', '@betteroffice/fonts', '@betteroffice/fonts/*', '@betteroffice/fonts-cjk', '@betteroffice/fonts-intl', '@betteroffice/fonts-latin', '#session-worker'];
-const browser = 'throw new Error("@betteroffice/xlsx-native runs on Node.js, Bun and Deno; use @betteroffice/xlsx in browsers");\n';
+const browser = 'throw new Error("@betteroffice/xlsx-native runs on Node.js, Bun and Deno; use @neonflower/sheet-core in browsers");\n';
 
 export default defineConfig({
   entry: {

@@ -14,7 +14,7 @@ test('default and in-thread props preserve the async contextual API', () => {
   const check = (readOnly: boolean) => [
     <XlsxEditor onReady={(api) => {
       assertType<Equal<typeof api, XlsxAsyncEditorApi>>();
-      assertType<Equal<ReturnType<typeof api.exportStructured>, Promise<ReturnType<import('@betteroffice/xlsx').WorkbookHandle['exportStructured']>>>>();
+      assertType<Equal<ReturnType<typeof api.exportStructured>, Promise<ReturnType<import('@neonflower/sheet-core').WorkbookHandle['exportStructured']>>>>();
       // @ts-expect-error
       api.handle;
       assertType<Equal<ReturnType<typeof api.save>, Promise<Uint8Array>>>();

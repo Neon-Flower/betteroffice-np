@@ -1,5 +1,5 @@
-import { openWorkbookSession } from '@betteroffice/xlsx';
-import { createWorkbookEditPeer, hydratePeer } from '@betteroffice/xlsx/worker';
+import { openWorkbookSession } from '@neonflower/sheet-core';
+import { createWorkbookEditPeer, hydratePeer } from '@neonflower/sheet-core/worker';
 
 export const editableWorkbookSessionBackend = {
   open: openWorkbookSession,

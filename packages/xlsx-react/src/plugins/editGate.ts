@@ -1,5 +1,5 @@
-import { translateFormulasOn } from '@betteroffice/xlsx';
-import type { CellAddr, CellInputEdit, CellPoint, CellRange, WorkbookHandle } from '@betteroffice/xlsx';
+import { translateFormulasOn } from '@neonflower/sheet-core';
+import type { CellAddr, CellInputEdit, CellPoint, CellRange, WorkbookHandle } from '@neonflower/sheet-core';
 import { XlsxHostRefusalError } from '../commands/createXlsxCommandStore';
 import type { XlsxPluginHost } from './createXlsxPluginHost';
 import type { XlsxPluginCellCommit, XlsxPluginCellRef } from './types';

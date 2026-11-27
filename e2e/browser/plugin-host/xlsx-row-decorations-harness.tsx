@@ -1,13 +1,13 @@
 import { createRoot } from 'react-dom/client';
 import { useEffect, useState } from 'react';
-import { initWasm, openWorkbook } from '@betteroffice/xlsx';
+import { initWasm, openWorkbook } from '@neonflower/sheet-core';
 import {
   XlsxEditor,
   defineXlsxPlugin,
   type XlsxAsyncEditorApi,
   type XlsxEditorApi,
   type XlsxPluginRowDecoration,
-} from '@betteroffice/xlsx-react';
+} from '@neonflower/sheet-react';
 import workbookUrl from '../../../packages/xlsx/test-fixtures/sample.xlsx?url';
 
 interface RowProbe {

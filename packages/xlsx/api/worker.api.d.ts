@@ -1,4 +1,4 @@
-// @betteroffice/xlsx "./worker" public API surface
+// @neonflower/sheet-core "./worker" public API surface
 // Regenerate: bun scripts/api-surface.ts --write xlsx
 // ---- charts.d.ts ----
 export interface ChartSeriesInfo {

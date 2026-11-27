@@ -129,7 +129,7 @@ test('PPTX long reads and search stay bounded and reject paragraph crossings', a
 
 test('XLSX pages and search hydrate cell handles with one engine read', async () => {
   const book = await openXlsx(await xlsxFixture());
-  const internal = book as unknown as { handle: import('@betteroffice/xlsx').WorkbookHandle };
+  const internal = book as unknown as { handle: import('@neonflower/sheet-core').WorkbookHandle };
   const reads = spyOn(internal.handle, 'readCells');
   try {
     const page = book.readCells({ sheet: 'sheet:0', range: 'A3:E30', offset: 3, limit: 100 });

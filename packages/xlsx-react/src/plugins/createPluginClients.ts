@@ -5,7 +5,7 @@ import type {
   XlsxEditRefusal,
   XlsxEditRequest,
   XlsxEditResult,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 import { grantsCommand, grantsEditBatch, grantsWrite } from '../../../../shared/plugin-host/grants';
 import type { InvocationRefusal, PluginInvocation } from '../../../../shared/plugin-host/runtime';
 import {

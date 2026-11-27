@@ -1,4 +1,4 @@
-`workbook-npm-0.2.1.update.bin` was produced with published `@betteroffice/xlsx@0.2.1` from `packages/xlsx/test-fixtures/sample.xlsx`:
+`workbook-npm-0.2.1.update.bin` was produced with published `@neonflower/sheet-core@0.2.1` from `packages/xlsx/test-fixtures/sample.xlsx`:
 
 ```js
 const workbook = openWorkbook(source, { collaborative: true, clientId: 1602 });

@@ -1,5 +1,5 @@
 ---
-'@betteroffice/xlsx': patch
+'@neonflower/sheet-core': patch
 '@betteroffice/xlsx-native': patch
 '@betteroffice/python-xlsx': patch
 '@betteroffice/rust-crates': patch

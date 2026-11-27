@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test';
-import type { WorkbookSession } from '@betteroffice/xlsx';
-import { createAsyncCollaborationReplica } from '@betteroffice/xlsx/collaboration';
+import type { WorkbookSession } from '@neonflower/sheet-core';
+import { createAsyncCollaborationReplica } from '@neonflower/sheet-core/collaboration';
 import { SessionFailure } from '../../../../shared/office-session';
 import { createXlsxCommandController } from '../commands/createXlsxCommandStore';
 import { testSessionCommands } from '../commands/testing';

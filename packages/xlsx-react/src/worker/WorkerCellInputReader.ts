@@ -1,4 +1,4 @@
-import type { WorkbookSession } from '@betteroffice/xlsx';
+import type { WorkbookSession } from '@neonflower/sheet-core';
 import type { PeerlessWorkerInputCoordinator } from '../commands/peerlessWorkerInputCoordinator';
 
 export function readWorkerCellInput(session: WorkbookSession, sheet: number, a1: string): Promise<string> {

@@ -1,7 +1,7 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { afterAll, afterEach, expect, test } from 'bun:test';
-import type { DisplayList, Selection } from '@betteroffice/xlsx';
-import { XLSX_MAX_COLUMNS, XLSX_MAX_ROWS } from '@betteroffice/xlsx/collaboration';
+import type { DisplayList, Selection } from '@neonflower/sheet-core';
+import { XLSX_MAX_COLUMNS, XLSX_MAX_ROWS } from '@neonflower/sheet-core/collaboration';
 import { fireEvent } from '@testing-library/react';
 import {
   HEADER_RESIZE_ZONE_PX,

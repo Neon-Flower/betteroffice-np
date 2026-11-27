@@ -1,22 +1,6 @@
-<p align="center">
-  <a href="https://betteroffice.dev">
-    <img src="./.github/assets/header.svg" alt="BetterOffice: the open-source office suite, built on native OOXML engines in Rust" width="100%">
-  </a>
-</p>
+# betteroffice-np
 
-<p align="center">
-  Rust-native OOXML engines with collaboration and agent editing at the core.<br>
-  WebAssembly for browsers. Headless APIs for servers. Native Rust where you need it.
-</p>
-
-<p align="center">
-  <a href="./LICENSE"><img src="https://betteroffice.dev/api/badge?label=license&amp;message=Apache-2.0&amp;color=4ade80" alt="license"></a>
-  <a href="https://www.npmjs.com/org/betteroffice"><img src="https://betteroffice.dev/api/npm-downloads-badge" alt="npm downloads: 4,440,154/month (snapshot 2026-11-25)"></a>
-  <a href="https://crates.io/search?q=betteroffice"><img src="https://betteroffice.dev/api/crates-downloads-badge" alt="crates.io downloads: 77,018/month (snapshot 2026-11-25)"></a>
-  <a href="https://pypi.org/project/betteroffice-xlsx/"><img src="https://betteroffice.dev/api/pypi-downloads-badge" alt="PyPI downloads: 70,844/month (snapshot 2026-11-25)"></a>
-  <a href="https://betteroffice.dev"><img src="https://betteroffice.dev/api/badge?label=&amp;message=betteroffice.dev&amp;color=0a0a0a" alt="betteroffice.dev"></a>
-  <a href="https://betteroffice.dev/blog"><img src="https://betteroffice.dev/api/badge?label=&amp;message=blog&amp;color=0a0a0a" alt="BetterOffice blog"></a>
-</p>
+NeonPublic fork of [openooxml/betteroffice](https://github.com/openooxml/betteroffice) (Apache-2.0). Only the spreadsheet packages are renamed (`@neonflower/sheet-core`, `@neonflower/sheet-react`, `@neonflower/sheet-i18n`). `LICENSE`, `NOTICE` and `THIRD-PARTY-NOTICES.md` are kept; the upstream logos and badges are removed because the licence gives no trademark right. The `upstream-mirror` branch is an untouched copy of upstream `main`.
 
 ## Features
 
@@ -50,7 +34,7 @@
 | | Rust | Core | Core (native) | React | Python |
 |---|---|---|---|---|---|
 | DOCX | [`betteroffice-docx`](https://crates.io/crates/betteroffice-docx) | [`docx`](https://www.npmjs.com/package/@betteroffice/docx) | [`docx-native`](https://www.npmjs.com/package/@betteroffice/docx-native) | [`docx-react`](https://www.npmjs.com/package/@betteroffice/docx-react) | [`betteroffice-docx`](https://pypi.org/project/betteroffice-docx/) |
-| XLSX | [`betteroffice-xlsx`](https://crates.io/crates/betteroffice-xlsx) | [`xlsx`](https://www.npmjs.com/package/@betteroffice/xlsx) | [`xlsx-native`](https://www.npmjs.com/package/@betteroffice/xlsx-native) | [`xlsx-react`](https://www.npmjs.com/package/@betteroffice/xlsx-react) | [`betteroffice-xlsx`](https://pypi.org/project/betteroffice-xlsx/) |
+| XLSX | [`betteroffice-xlsx`](https://crates.io/crates/betteroffice-xlsx) | [`xlsx`](https://www.npmjs.com/package/@neonflower/sheet-core) | [`xlsx-native`](https://www.npmjs.com/package/@betteroffice/xlsx-native) | [`xlsx-react`](https://www.npmjs.com/package/@neonflower/sheet-react) | [`betteroffice-xlsx`](https://pypi.org/project/betteroffice-xlsx/) |
 | PPTX | [`betteroffice-pptx`](https://crates.io/crates/betteroffice-pptx) | [`pptx`](https://www.npmjs.com/package/@betteroffice/pptx) | [`pptx-native`](https://www.npmjs.com/package/@betteroffice/pptx-native) | [`pptx-react`](https://www.npmjs.com/package/@betteroffice/pptx-react) | [`betteroffice-pptx`](https://pypi.org/project/betteroffice-pptx/) |
 
 **Rust:** typed engine API. **Core:** `@betteroffice/<format>`, the framework-free core through WebAssembly. **Core (native):** the same engine as prebuilt native bindings for Node.js, Bun and Deno on macOS, Linux and Windows. **React:** drop-in editor. **Python:** read, edit, render, save.
@@ -60,7 +44,7 @@ More packages:
 - **Agent tools:** [`@betteroffice/agents`](https://www.npmjs.com/package/@betteroffice/agents), the TypeScript SDK and `betteroffice-mcp` server.
 - **WOPI app (alpha):** a self-hosted container that serves the BetterOffice editors to a WOPI host (your file platform), so it can open DOCX, XLSX and PPTX files in them and save them back. See [WOPI app](https://docs.betteroffice.dev/docs/wopi) for running it and for setup notes for OpenCloud, Nextcloud and Seafile.
 - **Fonts:** [`@betteroffice/fonts`](https://www.npmjs.com/package/@betteroffice/fonts), [`@betteroffice/fonts-cjk`](https://www.npmjs.com/package/@betteroffice/fonts-cjk), [`@betteroffice/fonts-intl`](https://www.npmjs.com/package/@betteroffice/fonts-intl), [`@betteroffice/fonts-latin`](https://www.npmjs.com/package/@betteroffice/fonts-latin).
-- **i18n:** [`@betteroffice/docx-i18n`](https://www.npmjs.com/package/@betteroffice/docx-i18n), [`@betteroffice/xlsx-i18n`](https://www.npmjs.com/package/@betteroffice/xlsx-i18n), [`@betteroffice/pptx-i18n`](https://www.npmjs.com/package/@betteroffice/pptx-i18n).
+- **i18n:** [`@betteroffice/docx-i18n`](https://www.npmjs.com/package/@betteroffice/docx-i18n), [`@neonflower/sheet-i18n`](https://www.npmjs.com/package/@neonflower/sheet-i18n), [`@betteroffice/pptx-i18n`](https://www.npmjs.com/package/@betteroffice/pptx-i18n).
 
 What to install for which language, with a first example each:
 [npm](https://docs.betteroffice.dev/docs/javascript),

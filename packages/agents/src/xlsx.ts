@@ -1,7 +1,7 @@
 import { editCharts, listCharts, readChartText, type XlsxChartEdit, type XlsxChartTextRead } from './xlsx-charts';
-import { translateFormulasOn, type WorkbookHandle, type XlsxCellRead, type XlsxEditStep } from '@betteroffice/xlsx';
+import { translateFormulasOn, type WorkbookHandle, type XlsxCellRead, type XlsxEditStep } from '@neonflower/sheet-core';
 import { engines } from '#agents-engines';
-import type { WorkbookEditPeer } from '@betteroffice/xlsx/worker';
+import type { WorkbookEditPeer } from '@neonflower/sheet-core/worker';
 import { DocumentToolError, type GrepOptions, type TextEdit } from './types';
 import { setAutoFilter, applyXlsxFormatting, editConditionalFormats, editXlsxDefinedNames, listXlsxDefinedNames, editXlsxGrid, editXlsxSheets, findXlsx, listConditionalFormats, readConditionalFormatFormula, outlineXlsx, previewXlsx, sortXlsx, writeXlsx, type XlsxProtectionOptions, type XlsxConditionalFormatEdit, type XlsxDefinedNameEdit, type XlsxFormatEdit, type XlsxGridEdit, type XlsxSheetEdit, type XlsxWriteEdit } from './xlsx-operations';
 import { initialize, integer, plainText, PrototypeDocument, textWindow, unwrap, type AgentProposal, type PrototypeOptions } from './prototype';

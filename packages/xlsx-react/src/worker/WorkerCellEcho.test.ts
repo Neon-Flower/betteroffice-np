@@ -1,5 +1,5 @@
-import type { DisplayList, TextCmd } from '@betteroffice/xlsx';
-import type { WorkbookCommandFrame } from '@betteroffice/xlsx/worker';
+import type { DisplayList, TextCmd } from '@neonflower/sheet-core';
+import type { WorkbookCommandFrame } from '@neonflower/sheet-core/worker';
 import { describe, expect, test } from 'bun:test';
 import { WorkerCellEcho } from './WorkerCellEcho';
 import { PeerlessWorkerPaintSource as WorkerPaintSource, type WorkerPaintRequest } from './PeerlessWorkerPaintSource';

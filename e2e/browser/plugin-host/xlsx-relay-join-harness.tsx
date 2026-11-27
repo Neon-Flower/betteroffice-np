@@ -1,8 +1,8 @@
 import { createRoot } from 'react-dom/client';
 import JSZip from 'jszip';
-import { XlsxEditor } from '@betteroffice/xlsx-react';
+import { XlsxEditor } from '@neonflower/sheet-react';
 import { CollaborationProvider, attachCollaborationPipe, collaborationPipeFor, createAsyncCollaborationReplica, type AsyncReplicaAdapter, type CollaborationReplica,
-  type CollaborationTransport, type CollaborationTransportEvent } from '@betteroffice/xlsx/collaboration';
+  type CollaborationTransport, type CollaborationTransportEvent } from '@neonflower/sheet-core/collaboration';
 import { RetainedUpdateLog } from '../../../apps/relay/src/retention';
 import { classifyFrame } from '../../../apps/relay/src/retention';
 import { MAX_COLLABORATION_FRAME_BYTES } from '../../../shared/collaboration-limits';

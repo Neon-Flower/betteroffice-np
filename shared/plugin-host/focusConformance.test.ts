@@ -2,7 +2,7 @@ import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { afterAll, afterEach, expect, spyOn, test } from 'bun:test';
 import { act, createElement, type ReactNode } from 'react';
 import type { PresentationHandle } from '@betteroffice/pptx';
-import type { WorkbookHandle } from '@betteroffice/xlsx';
+import type { WorkbookHandle } from '@neonflower/sheet-core';
 
 const ownsDom = !GlobalRegistrator.isRegistered;
 if (ownsDom) GlobalRegistrator.register();

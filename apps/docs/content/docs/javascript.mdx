@@ -33,7 +33,7 @@ measurement and pagination.
 The spreadsheet and presentation editors take a `Uint8Array` or an `ArrayBuffer`:
 
 ```tsx
-import { XlsxEditor } from "@betteroffice/xlsx-react";
+import { XlsxEditor } from "@neonflower/sheet-react";
 import { PptxEditor } from "@betteroffice/pptx-react";
 
 <XlsxEditor file={bytes} fileName="report.xlsx" />;
@@ -661,7 +661,7 @@ import {
   ToolbarCommandSelect,
   ToolbarGroup,
   XlsxEditor,
-} from "@betteroffice/xlsx-react";
+} from "@neonflower/sheet-react";
 
 <XlsxEditor
   file={bytes}
@@ -720,7 +720,7 @@ read-only worker viewer (`legacySyncApi` with `experimentalWorkerOpen` and
 or through `console.error` when `onPluginError` is not set:
 
 ```tsx
-import { XlsxEditor, defineXlsxPlugin } from "@betteroffice/xlsx-react";
+import { XlsxEditor, defineXlsxPlugin } from "@neonflower/sheet-react";
 
 const review = defineXlsxPlugin<{ sheets: number }>({
   id: "acme.review",
@@ -913,7 +913,7 @@ rather than sandboxing code, and they are not spreadsheet protection.
 ## Use the JavaScript core
 
 ```ts
-import { initWasm, openWorkbook, paintDisplayList } from "@betteroffice/xlsx";
+import { initWasm, openWorkbook, paintDisplayList } from "@neonflower/sheet-core";
 
 await initWasm();
 const workbook = openWorkbook(new Uint8Array(await file.arrayBuffer()));
@@ -1229,7 +1229,7 @@ anchors, formulas, stored values, formatted text, explicit hidden-content
 options, and omission diagnostics. Export does not recalculate formulas.
 
 ```ts
-import { exportXlsxMarkdown } from "@betteroffice/xlsx";
+import { exportXlsxMarkdown } from "@neonflower/sheet-core";
 
 const result = workbook.exportStructured({
   scope: [{ sheet: 0, range: "A1:H40" }],
@@ -1386,9 +1386,9 @@ the version they were resolved at.
 | `@betteroffice/docx` | Framework-free DOCX core: OOXML parse and serialize, CRDT editing, version-checked atomic text, paragraph and content-control batches, content-control discovery, structured JSON and Markdown export with source anchors, text shaping, pagination, canvas rendering. Saving preserves untouched package parts. |
 | `@betteroffice/docx-react` | The DOCX editor and viewer as a React component: toolbar, paginated canvas, comments, tracked changes, a command store with composable toolbar parts, flushed version-checked edit batches and content-control discovery on its ref, and host-owned plugins with panels, overlays, sidebar items, lifecycle events, and explicitly granted commands and edit batches. |
 | `@betteroffice/docx-i18n` | UI locale strings and types for the DOCX React editor. |
-| `@betteroffice/xlsx` | Framework-free XLSX core: SpreadsheetML parse and serialize, formula recalculation, version-checked atomic cell batches, anchored JSON and Markdown export, grid display lists, hit-testing, canvas PNG export, and reviewable agent proposals. |
-| `@betteroffice/xlsx-react` | The spreadsheet editor and viewer as a React component, with a command store and composable toolbar parts, flushed reads, version-checked edit batches and `save()` on its `onReady` API, and host-owned plugins with panels, overlays, lifecycle events, and explicitly granted commands and edit batches. |
-| `@betteroffice/xlsx-i18n` | UI locale strings and types for the XLSX React editor. |
+| `@neonflower/sheet-core` | Framework-free XLSX core: SpreadsheetML parse and serialize, formula recalculation, version-checked atomic cell batches, anchored JSON and Markdown export, grid display lists, hit-testing, canvas PNG export, and reviewable agent proposals. |
+| `@neonflower/sheet-react` | The spreadsheet editor and viewer as a React component, with a command store and composable toolbar parts, flushed reads, version-checked edit batches and `save()` on its `onReady` API, and host-owned plugins with panels, overlays, lifecycle events, and explicitly granted commands and edit batches. |
+| `@neonflower/sheet-i18n` | UI locale strings and types for the XLSX React editor. |
 | `@betteroffice/pptx` | Framework-free PPTX core: parsing, editing, version-checked atomic edit batches, structured JSON and Markdown export with anchors, masters and layouts, rendering, comments, collaboration, and saving. Untouched slides retain their source bytes. |
 | `@betteroffice/pptx-react` | The slides editor and viewer as a React component, with a command store, composable toolbar parts, flushed version-checked edit batches and structured and Markdown export on its editor API, and host-owned plugins with panels, overlays, lifecycle events, and explicitly granted commands and edit batches. |
 | `@betteroffice/pptx-i18n` | UI locale strings and types for the PPTX React editor. |

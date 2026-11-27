@@ -1,5 +1,5 @@
 import { useCallback, useLayoutEffect, useMemo, useRef } from 'react';
-import type { DisplayList, WorkbookSession, XlsxFontFace, XlsxPngFont, XlsxPngTarget } from '@betteroffice/xlsx';
+import type { DisplayList, WorkbookSession, XlsxFontFace, XlsxPngFont, XlsxPngTarget } from '@neonflower/sheet-core';
 import type { RemoteFontProvider } from '@betteroffice/fonts/remote';
 import type { createDefaultFontPainter } from './defaultFonts';
 
@@ -67,7 +67,7 @@ export async function editorExportFaces(
   const faces = await exportFaces(fonts, decoder, reported);
   if (faces.length) return faces;
   if (target && reported.size) {
-    Object.defineProperty(target, Symbol.for('@betteroffice/xlsx/reportedFontCdnErrors'), { value: reported });
+    Object.defineProperty(target, Symbol.for('@neonflower/sheet-core/reportedFontCdnErrors'), { value: reported });
   }
   return undefined;
 }

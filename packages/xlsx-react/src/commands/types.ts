@@ -1,5 +1,5 @@
-import type { XlsxEditRefusal } from '@betteroffice/xlsx';
-import type { TranslationKey } from '@betteroffice/xlsx-i18n';
+import type { XlsxEditRefusal } from '@neonflower/sheet-core';
+import type { TranslationKey } from '@neonflower/sheet-i18n';
 import type {
   CommandReason,
   CommandState,

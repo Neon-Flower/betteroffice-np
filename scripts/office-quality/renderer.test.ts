@@ -95,5 +95,5 @@ test('the published channel loads fonts from the release package, the commit cha
   expect(harness).toContain("from 'virtual:docx-quality-fonts'");
   expect(harness).not.toContain('packages/fonts/src/cdn');
   const renderer: any = (qualityRendererPlugin as any)('xlsx');
-  expect(String(renderer.load(renderer.resolveId('virtual:office-quality-renderer')))).toBe("export * from '@betteroffice/xlsx';");
+  expect(String(renderer.load(renderer.resolveId('virtual:office-quality-renderer')))).toBe("export * from '@neonflower/sheet-core';");
 });

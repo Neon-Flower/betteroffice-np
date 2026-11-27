@@ -1,5 +1,5 @@
-import { cellRect, normalizeRange, rangeRect } from '@betteroffice/xlsx';
-import type { CellRange, DisplayList, GridMeta, Proposal, Viewport } from '@betteroffice/xlsx';
+import { cellRect, normalizeRange, rangeRect } from '@neonflower/sheet-core';
+import type { CellRange, DisplayList, GridMeta, Proposal, Viewport } from '@neonflower/sheet-core';
 import type { XlsxPointPosition } from '../XlsxEditor.types';
 import type { XlsxAnchorGeometryResult, XlsxPluginGeometry, XlsxPluginLayout, XlsxPluginRect, XlsxPluginSelection } from './types';
 

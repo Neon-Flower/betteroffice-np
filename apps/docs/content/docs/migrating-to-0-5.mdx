@@ -4,7 +4,7 @@ description: Move React editor hosts to the new default editors and their async 
 ---
 
 In 0.5 the default editor in `@betteroffice/docx-react`,
-`@betteroffice/xlsx-react` and `@betteroffice/pptx-react` runs its document engine
+`@neonflower/sheet-react` and `@betteroffice/pptx-react` runs its document engine
 in a worker, and reads, edits and saves through the editor API are async.
 
 You are affected if your app:
@@ -133,7 +133,7 @@ The save command passes the bytes to `onSave` and downloads the workbook when
 with it. The command does not return bytes:
 
 ```tsx
-import { XlsxEditor, type XlsxAsyncEditorApi } from "@betteroffice/xlsx-react";
+import { XlsxEditor, type XlsxAsyncEditorApi } from "@neonflower/sheet-react";
 
 const api = useRef<XlsxAsyncEditorApi | null>(null);
 

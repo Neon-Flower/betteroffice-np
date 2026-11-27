@@ -1,4 +1,4 @@
-// @betteroffice/xlsx "." public API surface
+// @neonflower/sheet-core "." public API surface
 // Regenerate: bun scripts/api-surface.ts --write xlsx
 // ---- a11y/index.d.ts ----
 /**
@@ -1251,9 +1251,9 @@ export declare function parseHyperlinkLocation(location: string, currentSheet: s
 
 // ---- index.d.ts ----
 /**
- * `@betteroffice/xlsx` — the framework-free core: display-list types, the Canvas2D
+ * `@neonflower/sheet-core` — the framework-free core: display-list types, the Canvas2D
  * backend, pure viewport math, and the wasm loader. Framework chrome lives in
- * the adapter packages (`@betteroffice/xlsx-react`); nothing here touches react/vue
+ * the adapter packages (`@neonflower/sheet-react`); nothing here touches react/vue
  * (lint-enforced).
  */
 export * from './workerSession';

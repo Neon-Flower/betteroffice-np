@@ -1,4 +1,4 @@
-// @betteroffice/xlsx "./headless" public API surface
+// @neonflower/sheet-core "./headless" public API surface
 // Regenerate: bun scripts/api-surface.ts --write xlsx
 // ---- a11y/index.d.ts ----
 /**

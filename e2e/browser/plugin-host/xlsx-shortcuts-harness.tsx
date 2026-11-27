@@ -7,7 +7,7 @@ import {
   type XlsxEditorProps,
   type XlsxShortcuts,
   type ShortcutIssue,
-} from '@betteroffice/xlsx-react';
+} from '@neonflower/sheet-react';
 import workbookUrl from '../../../packages/xlsx/test-fixtures/sample.xlsx?url';
 
 const mode = new URLSearchParams(location.search).get('mode') ?? 'async';

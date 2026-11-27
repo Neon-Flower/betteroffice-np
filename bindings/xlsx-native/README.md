@@ -1,6 +1,6 @@
 # @betteroffice/xlsx-native
 
-The `@betteroffice/xlsx` API on the native Rust engine, for Node.js, Bun and Deno.
+The `@neonflower/sheet-core` API on the native Rust engine, for Node.js, Bun and Deno.
 Prebuilt binaries cover macOS arm64/x64, GNU and musl Linux arm64/x64, and Windows arm64/x64.
 PNG export renders with the installed Latin, international and CJK font packs; nothing is fetched. A `fonts` list passed to
 `renderPng`, even an empty one, replaces them for that export: a family it does not cover is painted with the engine's
@@ -17,7 +17,7 @@ npm install @betteroffice/xlsx-native
 ```
 
 This package has the same entry points (`.`, `./headless`, `./worker`, `./collaboration`), exports
-and type declarations as `@betteroffice/xlsx`, so code written for one runs on the other; pick the
+and type declarations as `@neonflower/sheet-core`, so code written for one runs on the other; pick the
 engine by the package you import. `initWasm()` needs no WebAssembly input here and ignores any it is given.
 
 ```ts
@@ -36,12 +36,12 @@ export async function updateWorkbook(bytes: Uint8Array): Promise<Uint8Array> {
 ```
 
 Browsers need the WebAssembly engine: the `browser` export condition of this package throws, so
-use `@betteroffice/xlsx` there. Main-thread edit peers hydrated from a worker session
+use `@neonflower/sheet-core` there. Main-thread edit peers hydrated from a worker session
 (`retainPeerHydration`) also need the WebAssembly engine.
 
 ## Memory and untrusted input
 
-The native engine runs inside the calling process. In `@betteroffice/xlsx` each engine runs in a
+The native engine runs inside the calling process. In `@neonflower/sheet-core` each engine runs in a
 WebAssembly memory of at most 4 GiB; the native engine gives each thread the same 4 GiB budget. It
 counts the engine's live allocations on that thread, and a call that takes them past the budget
 fails: a worker session fails with a typed out-of-memory error, a workbook handle throws and then

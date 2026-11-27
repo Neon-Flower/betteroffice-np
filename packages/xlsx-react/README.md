@@ -1,4 +1,4 @@
-# @betteroffice/xlsx-react
+# @neonflower/sheet-react
 
 React XLSX editor with a canvas grid, toolbar, selection, keyboard input, and clipboard support.
 The engine runs in a Web Worker by default, with promise-returning host operations and exports.
@@ -6,7 +6,7 @@ The engine runs in a Web Worker by default, with promise-returning host operatio
 ## Install
 
 ```bash
-bun add @betteroffice/xlsx-react react react-dom
+bun add @neonflower/sheet-react react react-dom
 ```
 
 `react` and `react-dom` 18 or 19 are peer dependencies; the XLSX core is included as a dependency.
@@ -14,7 +14,7 @@ bun add @betteroffice/xlsx-react react react-dom
 ## Usage
 
 ```tsx
-import { XlsxEditor } from '@betteroffice/xlsx-react';
+import { XlsxEditor } from '@neonflower/sheet-react';
 
 export function Spreadsheet({ bytes }: { bytes: Uint8Array }) {
   return (
@@ -50,7 +50,7 @@ The default props are described by `XlsxAsyncEditorProps`:
 | `toolbar` | `React.ReactNode` | Replace the default toolbar; `null` removes it. |
 | `showToolbar` | `boolean` | `false` hides the toolbar region, including custom content. |
 | `collaboration` | `XlsxEditorCollaborationOptions` | Configure the editor-owned replica and presence provider. |
-| `i18n` | `Translations` | Override UI strings using `@betteroffice/xlsx-i18n`. |
+| `i18n` | `Translations` | Override UI strings using `@neonflower/sheet-i18n`. |
 | `plugins` | `readonly XlsxPlugin[]` | Install host plugins. |
 | `pluginGrants` | `Readonly<Record<string, XlsxPluginGrant>>` | Grant capabilities by plugin ID. |
 | `onPluginError` | `(error: XlsxPluginError) => void` | Receive plugin failures. |
@@ -166,6 +166,6 @@ The editor retains its default worker runtime; see the
 - [JavaScript guide](https://docs.betteroffice.dev/docs/javascript)
 - [Collaboration guide](https://docs.betteroffice.dev/docs/collaboration)
 - [Package guide](https://docs.betteroffice.dev/docs/packages)
-- [XLSX core on npm](https://www.npmjs.com/package/@betteroffice/xlsx)
-- [Localization package on npm](https://www.npmjs.com/package/@betteroffice/xlsx-i18n)
+- [XLSX core on npm](https://www.npmjs.com/package/@neonflower/sheet-core)
+- [Localization package on npm](https://www.npmjs.com/package/@neonflower/sheet-i18n)
 - [Repository](https://github.com/openooxml/betteroffice)

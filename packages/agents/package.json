@@ -38,7 +38,7 @@
   "dependencies": {
     "@betteroffice/docx": "workspace:^",
     "@betteroffice/docx-native": "workspace:^",
-    "@betteroffice/xlsx": "workspace:^",
+    "@neonflower/sheet-core": "workspace:^",
     "@betteroffice/xlsx-native": "workspace:^",
     "@betteroffice/pptx": "workspace:^",
     "@betteroffice/pptx-native": "workspace:^",

@@ -1,4 +1,4 @@
-import type { DisplayList, Rect } from '@betteroffice/xlsx';
+import type { DisplayList, Rect } from '@neonflower/sheet-core';
 
 type Rgb = readonly [number, number, number];
 

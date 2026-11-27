@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test';
-import * as collaboration from '@betteroffice/xlsx/collaboration';
-import type { AwarenessCursor } from '@betteroffice/xlsx/collaboration';
+import * as collaboration from '@neonflower/sheet-core/collaboration';
+import type { AwarenessCursor } from '@neonflower/sheet-core/collaboration';
 import * as view from './awarenessView';
 
 describe('presence awareness helpers', () => {

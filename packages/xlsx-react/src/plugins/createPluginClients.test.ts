@@ -1,5 +1,5 @@
 import { expect, mock, test } from 'bun:test';
-import { selectionAt, type WorkbookHandle } from '@betteroffice/xlsx';
+import { selectionAt, type WorkbookHandle } from '@neonflower/sheet-core';
 import { createPeerlessPluginClients } from './createPeerlessPluginClients';
 import { createXlsxPluginHost } from './createXlsxPluginHost';
 import type { XlsxPluginEditorAccess } from './createPluginClients';

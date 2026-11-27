@@ -5,7 +5,7 @@ import {
   type XlsxPluginCommandResult,
   type XlsxPluginContext,
   type XlsxPluginGeometry,
-} from "@betteroffice/xlsx-react";
+} from "@neonflower/sheet-react";
 
 const REVIEW_PLUGIN_ID = "demo.review";
 const REVIEWED_FILL = "#d9ead3";

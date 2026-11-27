@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'bun:test';
-import type { DisplayList, WorkbookSheetView } from '@betteroffice/xlsx';
+import type { DisplayList, WorkbookSheetView } from '@neonflower/sheet-core';
 import { cellInViewport, deriveLimits, expandRangeToMergedCells, extendScrollExtent, laidOutCellRect, nearestCellScroll } from './sessionGeometry';
 
 describe('sheet navigation geometry', () => {

@@ -21,7 +21,7 @@ const publishedWorkers = [
 ];
 const staticImport = /\b(?:from|import)\s*["'`]([^"'`]+)["'`]/g;
 const app = `
-import { openWorkbookSession } from '@betteroffice/xlsx/worker';
+import { openWorkbookSession } from '@neonflower/sheet-core/worker';
 import { openPresentationSession } from '@betteroffice/pptx/worker';
 import { DocxSourceWorkerClient } from '@betteroffice/docx/worker';
 globalThis.workerSessionSmoke = { openWorkbookSession, openPresentationSession, DocxSourceWorkerClient };

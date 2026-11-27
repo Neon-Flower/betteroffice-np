@@ -28,8 +28,8 @@
         "@betteroffice/pptx-react": "workspace:*",
         "@betteroffice/vsdx": "workspace:*",
         "@betteroffice/vsdx-react": "workspace:*",
-        "@betteroffice/xlsx": "workspace:*",
-        "@betteroffice/xlsx-react": "workspace:*",
+        "@neonflower/sheet-core": "workspace:*",
+        "@neonflower/sheet-react": "workspace:*",
         "@fontsource-variable/geist": "^5.3.0",
         "@fontsource-variable/geist-mono": "^5.3.0",
         "@tailwindcss/postcss": "^4.3.2",
@@ -68,9 +68,9 @@
         "@betteroffice/pptx": "workspace:*",
         "@betteroffice/pptx-i18n": "workspace:*",
         "@betteroffice/pptx-react": "workspace:*",
-        "@betteroffice/xlsx": "workspace:*",
-        "@betteroffice/xlsx-i18n": "workspace:*",
-        "@betteroffice/xlsx-react": "workspace:*",
+        "@neonflower/sheet-core": "workspace:*",
+        "@neonflower/sheet-i18n": "workspace:*",
+        "@neonflower/sheet-react": "workspace:*",
         "react": "^19.2.7",
         "react-dom": "^19.2.7",
       },
@@ -207,8 +207,8 @@
         "@betteroffice/fonts-latin": "workspace:*",
         "@betteroffice/pptx": "workspace:*",
         "@betteroffice/pptx-react": "workspace:*",
-        "@betteroffice/xlsx": "workspace:*",
-        "@betteroffice/xlsx-react": "workspace:*",
+        "@neonflower/sheet-core": "workspace:*",
+        "@neonflower/sheet-react": "workspace:*",
         "jszip": "3.10.1",
         "react": "^19.2.7",
         "react-dom": "^19.2.7",
@@ -299,7 +299,7 @@
         "@betteroffice/fonts": "workspace:^",
         "@betteroffice/pptx": "workspace:^",
         "@betteroffice/pptx-native": "workspace:^",
-        "@betteroffice/xlsx": "workspace:^",
+        "@neonflower/sheet-core": "workspace:^",
         "@betteroffice/xlsx-native": "workspace:^",
         "@modelcontextprotocol/sdk": "~1.32.0",
         "image-size": "^2.0.2",
@@ -512,7 +512,7 @@
       },
     },
     "packages/xlsx": {
-      "name": "@betteroffice/xlsx",
+      "name": "@neonflower/sheet-core",
       "version": "0.6.1",
       "dependencies": {
         "@betteroffice/fonts": "workspace:^",
@@ -525,7 +525,7 @@
       },
     },
     "packages/xlsx-i18n": {
-      "name": "@betteroffice/xlsx-i18n",
+      "name": "@neonflower/sheet-i18n",
       "version": "0.6.1",
       "devDependencies": {
         "tsup": "^8.0.1",
@@ -533,12 +533,12 @@
       },
     },
     "packages/xlsx-react": {
-      "name": "@betteroffice/xlsx-react",
+      "name": "@neonflower/sheet-react",
       "version": "0.6.1",
       "dependencies": {
         "@betteroffice/fonts": "workspace:^",
-        "@betteroffice/xlsx": "workspace:*",
-        "@betteroffice/xlsx-i18n": "workspace:*",
+        "@neonflower/sheet-core": "workspace:*",
+        "@neonflower/sheet-i18n": "workspace:*",
       },
       "devDependencies": {
         "@happy-dom/global-registrator": "^21.0.4",
@@ -811,13 +811,13 @@
 
     "@betteroffice/wopi": ["@betteroffice/wopi@workspace:apps/wopi"],
 
-    "@betteroffice/xlsx": ["@betteroffice/xlsx@workspace:packages/xlsx"],
+    "@neonflower/sheet-core": ["@neonflower/sheet-core@workspace:packages/xlsx"],
 
-    "@betteroffice/xlsx-i18n": ["@betteroffice/xlsx-i18n@workspace:packages/xlsx-i18n"],
+    "@neonflower/sheet-i18n": ["@neonflower/sheet-i18n@workspace:packages/xlsx-i18n"],
 
     "@betteroffice/xlsx-native": ["@betteroffice/xlsx-native@workspace:bindings/xlsx-native"],
 
-    "@betteroffice/xlsx-react": ["@betteroffice/xlsx-react@workspace:packages/xlsx-react"],
+    "@neonflower/sheet-react": ["@neonflower/sheet-react@workspace:packages/xlsx-react"],
 
     "@changesets/apply-release-plan": ["@changesets/apply-release-plan@7.1.1", "", { "dependencies": { "@changesets/config": "^3.1.4", "@changesets/get-version-range-type": "^0.4.0", "@changesets/git": "^3.0.4", "@changesets/should-skip-package": "^0.1.2", "@changesets/types": "^6.1.0", "@manypkg/get-packages": "^1.1.3", "detect-indent": "^6.0.0", "fs-extra": "^7.0.1", "lodash.startcase": "^4.4.0", "outdent": "^0.5.0", "prettier": "^2.7.1", "resolve-from": "^5.0.0", "semver": "^7.5.3" } }, "sha512-9qPCm/rLx/xoOFXIHGB229+4GOL76S4MC+7tyOuTsR6+1jYlfFDQORdvwR5hDA6y4FL2BPt3qpbcQIS+dW85LA=="],
 

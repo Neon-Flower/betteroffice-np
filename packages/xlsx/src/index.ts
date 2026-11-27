@@ -1,7 +1,7 @@
 /**
- * `@betteroffice/xlsx` — the framework-free core: display-list types, the Canvas2D
+ * `@neonflower/sheet-core` — the framework-free core: display-list types, the Canvas2D
  * backend, pure viewport math, and the wasm loader. Framework chrome lives in
- * the adapter packages (`@betteroffice/xlsx-react`); nothing here touches react/vue
+ * the adapter packages (`@neonflower/sheet-react`); nothing here touches react/vue
  * (lint-enforced).
  */
 

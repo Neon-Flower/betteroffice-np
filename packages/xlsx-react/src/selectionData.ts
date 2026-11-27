@@ -1,8 +1,8 @@
-import { normalizeRange, selectionKeyReducer } from '@betteroffice/xlsx';
+import { normalizeRange, selectionKeyReducer } from '@neonflower/sheet-core';
 import type {
   CellAddr, CellInputEdit, CellRange, Direction, GridMeta, KeyInput, MergedRange, Selection, SelectionData, SelectionHidden,
   SelectionLimits, SelectionMerges, WorkbookHandle, WorkbookSession,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 
 const SHEET_ROWS = 1_048_576;
 const SHEET_COLS = 16_384;

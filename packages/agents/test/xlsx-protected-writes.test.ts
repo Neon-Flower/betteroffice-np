@@ -5,7 +5,7 @@ import { join, resolve } from 'node:path';
 import JSZip from 'jszip';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { StdioClientTransport } from '@modelcontextprotocol/sdk/client/stdio.js';
-import { initWasm, openWorkbook } from '@betteroffice/xlsx';
+import { initWasm, openWorkbook } from '@neonflower/sheet-core';
 import { attachXlsx, openXlsx } from '../src/xlsx';
 import { implicitFontWorkbook } from './format-fixtures';
 import { cliEnv } from './cli-env';

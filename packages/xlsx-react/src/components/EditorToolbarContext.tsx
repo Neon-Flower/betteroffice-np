@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import type { Translations } from '@betteroffice/xlsx-i18n';
+import type { Translations } from '@neonflower/sheet-i18n';
 import type { ToolbarMode, ToolbarProps } from './Toolbar';
 
 export interface EditorToolbarProps extends ToolbarProps {

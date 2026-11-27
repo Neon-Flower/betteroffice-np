@@ -10,7 +10,7 @@
 
 ### Minor Changes
 
-- cf72bb4: The native packages now export the full `@betteroffice/docx`, `@betteroffice/xlsx` and `@betteroffice/pptx` APIs as ES modules, and `require()` of them needs Node 20.19 or 22.12: `engines` now says so. `@betteroffice/agents`, which depends on them, requires Node 22.12.
+- cf72bb4: The native packages now export the full `@betteroffice/docx`, `@neonflower/sheet-core` and `@betteroffice/pptx` APIs as ES modules, and `require()` of them needs Node 20.19 or 22.12: `engines` now says so. `@betteroffice/agents`, which depends on them, requires Node 22.12.
 - f1e7906: Adds experimental `fontPreflight` and `preloadPreflightWasm` for the active slide and the opening sheet, without opening the editing engine. DOCX `fontPreflight` answers now follow the engine for notes, the main part, numbering, theme script fonts, style defaults and table columns.
 - 702b174: The calculation engine now evaluates RATE, IRR, MIRR, XNPV, XIRR, IPMT, PPMT, CUMIPMT, CUMPRINC, ISPMT, DB, DDB, VDB, SLN, SYD, EFFECT, NOMINAL, PDURATION, RRI, FVSCHEDULE, DOLLARDE, DOLLARFR and CELL. RATE follows Excel's own iteration, so results match Excel's saved values.
 - dac1245: The calculation engine now evaluates GAMMA, GAMMALN and the gamma, beta, normal, lognormal, chi-square, t and F distribution functions with their inverses and compatibility names, ERF and ERFC, PHI, GAUSS, CHISQ.TEST, T.TEST, F.TEST and the CONFIDENCE functions.
@@ -26,7 +26,7 @@
 - 0d9427d: A number format a workbook declares for a built-in id is shown as declared, as in Excel. Shared states of a workbook that declares such an id use schema version 8, which clients on an older version do not open; all other workbooks are unchanged.
 - 4520944: Adds `install_panic_hook`, matching the WebAssembly engine. The package installs it on load, so on macOS and Linux a Rust panic writes one `[xlsx-native] panic:` line to stderr, then Rust's default report. The thrown error is unchanged; calling it again does nothing.
 - 3adc24b: `renderPng` draws in the native engine through the new raw `renderPngTarget(targetJson, optionsJson)`, which honours scale and maxWidth and maxHeight for viewports and ranges. The raw `renderPng(viewportJson)` and `renderRangePng(args)` are removed.
-- 7a91087: Now exposes exactly the `@betteroffice/xlsx` API (same entry points, exports and types) on the native engine for Node.js, Bun and Deno; pick the engine by import. The `browser` condition throws. The `openWorkbook(Buffer)`/`Workbook` facade is removed.
+- 7a91087: Now exposes exactly the `@neonflower/sheet-core` API (same entry points, exports and types) on the native engine for Node.js, Bun and Deno; pick the engine by import. The `browser` condition throws. The `openWorkbook(Buffer)`/`Workbook` facade is removed.
 - ed7c58f: Adds the `openWorkbook` option `recalculate: 'stale'`, which shows the formula results a file cached and recalculates only when a formula has none or `calcPr` requests it. Defaults to `'all'`.
 - 83d0750: Listed spreadsheet proposals now name their moved cells in `staleTargets` (`stale_targets` in Python), so hosts can warn before accepting. Python also gains `list_proposals()`, an alias of `proposals()`.
 - e76f70d: Editors and direct writes now refuse locked cells, formats and chart moves and resizes on protected sheets by default, like Excel. Direct writes accept opt-in `protectedSheets: "allow"` (Python `protected_sheets="allow"`), which writes through and keeps the protection.

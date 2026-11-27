@@ -1,7 +1,7 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { afterAll, afterEach, beforeAll, beforeEach, describe, expect, it, mock, spyOn } from 'bun:test';
 import { readFile } from 'node:fs/promises';
-import * as xlsx from '@betteroffice/xlsx';
+import * as xlsx from '@neonflower/sheet-core';
 import { initWasm } from '../../../xlsx/src/wasm/loader';
 import { createTestWorkbookSession } from '../../../xlsx/src/session/testHelpers';
 import { XlsxWorkerEditor } from './XlsxWorkerEditor';

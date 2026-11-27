@@ -32,7 +32,7 @@ const CONSUMER = `import {
   type XlsxGeometryTarget,
   type XlsxPluginGrant,
   type XlsxPluginNavigationResult,
-} from '@betteroffice/xlsx-react';
+} from '@neonflower/sheet-react';
 
 type State = { count: number };
 
@@ -177,7 +177,7 @@ test.skipIf(declarationMode === 'skip')('the XLSX plugin API and the demo plugin
       encoding: 'utf8',
     });
     const declarations = readFileSync(
-      join(directory, 'node_modules/@betteroffice/xlsx-react/dist/index.d.ts'),
+      join(directory, 'node_modules/@neonflower/sheet-react/dist/index.d.ts'),
       'utf8'
     );
     expect({

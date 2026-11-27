@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import type { XlsxExportCell, XlsxExportSheet, XlsxStructuredContent } from "@betteroffice/xlsx";
+import type { XlsxExportCell, XlsxExportSheet, XlsxStructuredContent } from "@neonflower/sheet-core";
 import { buildTotalsEdits } from "./demoAgent";
 
 function cell(a1: string, value: XlsxExportCell["value"]): XlsxExportCell {

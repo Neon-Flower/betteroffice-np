@@ -1,6 +1,6 @@
 import { afterEach, expect, mock, spyOn, test } from 'bun:test';
 import * as fonts from '@betteroffice/fonts';
-import type { XlsxPngOptions, XlsxPngTarget } from '@betteroffice/xlsx';
+import type { XlsxPngOptions, XlsxPngTarget } from '@neonflower/sheet-core';
 import { getFontCdnConfiguration, setFontCdnConfiguration } from '../../../shared/office-session/fontCdn';
 import { fontAssetResponse, fontRuntimeWithoutPacks, withBrowserFontGlobals } from '../../fonts/src/fontAssets.test-support';
 import { spyOnFontFetch } from '../../fonts/src/fontFetch.test-support';

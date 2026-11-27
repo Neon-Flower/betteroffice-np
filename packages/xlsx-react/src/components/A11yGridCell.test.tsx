@@ -1,6 +1,6 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { afterAll, afterEach, expect, test } from 'bun:test';
-import type { A11yGrid } from '@betteroffice/xlsx';
+import type { A11yGrid } from '@neonflower/sheet-core';
 import { A11yGridTable } from './A11yGridCell';
 
 const ownsDom = !GlobalRegistrator.isRegistered;

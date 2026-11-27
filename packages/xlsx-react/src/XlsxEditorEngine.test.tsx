@@ -1,6 +1,6 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { afterAll, afterEach, beforeEach, describe, expect, it, mock, spyOn } from 'bun:test';
-import * as xlsx from '@betteroffice/xlsx';
+import * as xlsx from '@neonflower/sheet-core';
 import { StrictMode, useEffect, useState } from 'react';
 import type { XlsxInThreadEditorProps } from './XlsxEditor';
 import type { XlsxAsyncEditorApi } from './worker/createAsyncEditorApi';

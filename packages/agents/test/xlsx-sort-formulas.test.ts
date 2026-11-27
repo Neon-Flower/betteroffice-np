@@ -4,7 +4,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { InMemoryTransport } from '@modelcontextprotocol/sdk/inMemory.js';
-import type { XlsxCellValue } from '@betteroffice/xlsx';
+import type { XlsxCellValue } from '@neonflower/sheet-core';
 import JSZip from 'jszip';
 import { createOfficeMcpServer } from '../src/mcp';
 import { DocumentToolError } from '../src/types';

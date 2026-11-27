@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'bun:test';
-import type { DisplayList, Selection } from '@betteroffice/xlsx';
-import { createT, en } from '@betteroffice/xlsx-i18n';
+import type { DisplayList, Selection } from '@neonflower/sheet-core';
+import { createT, en } from '@neonflower/sheet-i18n';
 import { isSingleCell, paintedCellText, selectionAnnouncement, type AnnouncementStrings } from './selectionAnnouncement';
 
 const t = createT(en);

@@ -7,7 +7,7 @@ import {
   cellFontKey, cellScriptFamilies, cellScriptFontKey, cellScriptFontRequests,
   type CellScriptCache, type ScriptFontDisplayList,
 } from '../../../shared/office-session/xlsxScriptFonts';
-import { PngExportError, type DisplayList, type WorkbookSession, type XlsxFontFace, type XlsxPngFont } from '@betteroffice/xlsx';
+import { PngExportError, type DisplayList, type WorkbookSession, type XlsxFontFace, type XlsxPngFont } from '@neonflower/sheet-core';
 import type { BundledFontFace, BundledFontScript } from '@betteroffice/fonts';
 import type { RemoteFontProvider } from '@betteroffice/fonts/remote';
 

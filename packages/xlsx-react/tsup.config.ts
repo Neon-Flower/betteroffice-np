@@ -13,7 +13,7 @@ export const library: Options = {
   clean: true,
   treeshake: true,
   minify: true,
-  external: ['react', 'react-dom', '@betteroffice/xlsx', '@betteroffice/fonts'],
+  external: ['react', 'react-dom', '@neonflower/sheet-core', '@betteroffice/fonts'],
   esbuildPlugins: [packageBoundary(fileURLToPath(new URL('.', import.meta.url)))],
   esbuildOptions(options) {
     options.chunkNames = 'chunk-[hash]';

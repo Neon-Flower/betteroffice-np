@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import type { DisplayList, DrawCmd } from '@betteroffice/xlsx';
+import type { DisplayList, DrawCmd } from '@neonflower/sheet-core';
 import { cellEditorColors } from './cellEditorColors';
 
 const cell = { x: 100, y: 20, w: 80, h: 20 };

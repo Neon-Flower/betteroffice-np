@@ -1,7 +1,7 @@
 import { createContext, useContext, useMemo } from 'react';
 import type { ReactNode } from 'react';
-import { createT, deepMerge, en } from '@betteroffice/xlsx-i18n';
-import type { LocaleStrings, TFunction, Translations } from '@betteroffice/xlsx-i18n';
+import { createT, deepMerge, en } from '@neonflower/sheet-i18n';
+import type { LocaleStrings, TFunction, Translations } from '@neonflower/sheet-i18n';
 
 const LocaleContext = createContext<LocaleStrings>(en);
 const LangContext = createContext<string>('en');

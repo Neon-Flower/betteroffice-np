@@ -105,11 +105,11 @@ export const PACKAGES = [
     desc: "The DOCX editor and viewer as a drop-in React component.",
   },
   {
-    name: "@betteroffice/xlsx",
+    name: "@neonflower/sheet-core",
     desc: "Framework-free spreadsheet core: parsing, formula calculation and rendering on the Rust engine.",
   },
   {
-    name: "@betteroffice/xlsx-react",
+    name: "@neonflower/sheet-react",
     desc: "The spreadsheet editor and viewer as a drop-in React component.",
   },
   {

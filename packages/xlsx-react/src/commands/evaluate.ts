@@ -1,5 +1,5 @@
-import type { MergedRange, SelectionFormatting } from '@betteroffice/xlsx';
-import type { TranslationKey } from '@betteroffice/xlsx-i18n';
+import type { MergedRange, SelectionFormatting } from '@neonflower/sheet-core';
+import type { TranslationKey } from '@neonflower/sheet-i18n';
 import type {
   BorderPreset,
   BorderStyle,

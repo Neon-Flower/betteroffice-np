@@ -1,5 +1,5 @@
-import { workbookSessionRecovery, WorkbookRecoveryReplayError } from '@betteroffice/xlsx';
-import type { OpenWorkbookSessionOptions, WorkbookSession } from '@betteroffice/xlsx';
+import { workbookSessionRecovery, WorkbookRecoveryReplayError } from '@neonflower/sheet-core';
+import type { OpenWorkbookSessionOptions, WorkbookSession } from '@neonflower/sheet-core';
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import type { XlsxEditorCollaborationOptions } from '../XlsxEditor';
 import { XlsxCommandAdmissionError } from '../commands/createXlsxCommandStore';

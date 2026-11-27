@@ -1,4 +1,4 @@
-import type { DisplayList, MergedRange, Viewport, WorkbookFrame } from '@betteroffice/xlsx';
+import type { DisplayList, MergedRange, Viewport, WorkbookFrame } from '@neonflower/sheet-core';
 import { describe, expect, test } from 'bun:test';
 import {
   WorkerPaintSource,

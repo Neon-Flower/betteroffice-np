@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { createT, en } from '@betteroffice/xlsx-i18n';
+import { createT, en } from '@neonflower/sheet-i18n';
 import type { OverflowMenuEntry } from '../../../../shared/react-toolbar/MenuList';
 import { XLSX_COMMAND_DESCRIPTORS } from '../commands/descriptors';
 import { evaluateXlsxCommand, type XlsxCommandEnvironment } from '../commands/evaluate';

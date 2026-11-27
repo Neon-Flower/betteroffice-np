@@ -1,4 +1,4 @@
-# @betteroffice/xlsx-i18n
+# @neonflower/sheet-i18n
 
 ## 0.6.1
 

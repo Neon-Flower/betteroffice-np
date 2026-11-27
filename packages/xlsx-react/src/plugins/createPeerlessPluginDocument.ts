@@ -1,4 +1,4 @@
-import type { XlsxEditFailureCode, XlsxEditRequest, XlsxEditResult } from '@betteroffice/xlsx';
+import type { XlsxEditFailureCode, XlsxEditRequest, XlsxEditResult } from '@neonflower/sheet-core';
 import { XlsxCommandAdmissionError } from '../commands/createXlsxCommandStore';
 import { PeerlessWorkerCommandRefusal, type PeerlessWorkerInputCoordinator } from '../commands/peerlessWorkerInputCoordinator';
 import type { PeerlessWorkbookSession } from '../worker/usePeerlessSessionWorkbook';

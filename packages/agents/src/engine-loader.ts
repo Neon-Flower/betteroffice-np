@@ -7,7 +7,7 @@ export interface EngineModules {
     utils: typeof import('@betteroffice/docx/utils');
     render: typeof import('@betteroffice/docx/layout/render');
   };
-  xlsx: typeof import('@betteroffice/xlsx');
+  xlsx: typeof import('@neonflower/sheet-core');
   pptx: typeof import('@betteroffice/pptx');
 }
 

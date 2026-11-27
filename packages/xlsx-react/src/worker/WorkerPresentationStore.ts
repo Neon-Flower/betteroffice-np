@@ -1,5 +1,5 @@
 import { useMemo, useSyncExternalStore } from 'react';
-import type { Selection, WorkbookSheetView } from '@betteroffice/xlsx';
+import type { Selection, WorkbookSheetView } from '@neonflower/sheet-core';
 import type { WorkerPaintResult } from './PeerlessWorkerPaintSource';
 
 interface PresentationSnapshot {

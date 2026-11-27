@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type ComponentProps } from "react";
 import { DocxEditor, type DocxEditorRef, type DocxErrorInfo, type TrackedChangesOptions } from "@betteroffice/docx-react";
-import { XlsxEditor, type XlsxAsyncEditorApi } from "@betteroffice/xlsx-react";
+import { XlsxEditor, type XlsxAsyncEditorApi } from "@neonflower/sheet-react";
 import { PptxEditor, type PptxAsyncEditorApi } from "@betteroffice/pptx-react";
 import { configureDefaultFonts } from "@betteroffice/docx/layout";
 import { CollaborationProvider as DocxProvider, type AsyncReplicaAdapter } from "@betteroffice/docx/collaboration";
-import { CollaborationProvider as XlsxProvider } from "@betteroffice/xlsx/collaboration";
+import { CollaborationProvider as XlsxProvider } from "@neonflower/sheet-core/collaboration";
 import { CollaborationProvider as PptxProvider, type AsyncCollaborationReplica } from "@betteroffice/pptx/collaboration";
 import type { PptxFontFace } from "@betteroffice/pptx";
 import {
@@ -107,12 +107,12 @@ export async function prepareFile(
   }
   if (format === "xlsx") {
     if (typeof Worker === "function" && typeof OffscreenCanvas === "function") {
-      const { openWorkbookSession } = await import("@betteroffice/xlsx");
+      const { openWorkbookSession } = await import("@neonflower/sheet-core");
       const session = await openWorkbookSession(bytes);
       await session.dispose();
       return { bytes, format };
     }
-    const { initWasm, openWorkbook } = await import("@betteroffice/xlsx");
+    const { initWasm, openWorkbook } = await import("@neonflower/sheet-core");
     await initWasm();
     openWorkbook(bytes).dispose();
     return { bytes, format };

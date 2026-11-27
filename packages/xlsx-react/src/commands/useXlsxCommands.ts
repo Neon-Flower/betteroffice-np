@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef } from 'react';
-import { normalizeRange, StaleProposalError } from '@betteroffice/xlsx';
+import { normalizeRange, StaleProposalError } from '@neonflower/sheet-core';
 import type {
   CapturedFormat,
   EditResult,
@@ -8,8 +8,8 @@ import type {
   Selection,
   SelectionFormatting,
   WorkbookHandle,
-} from '@betteroffice/xlsx';
-import type { TFunction, Translations } from '@betteroffice/xlsx-i18n';
+} from '@neonflower/sheet-core';
+import type { TFunction, Translations } from '@neonflower/sheet-i18n';
 import type { BorderStyle, MergeAction } from '../components/Toolbar';
 import type { XlsxCommandBinding, XlsxCommandController } from './createXlsxCommandStore';
 import {

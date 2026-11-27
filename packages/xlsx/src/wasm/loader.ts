@@ -1417,7 +1417,7 @@ function wrapWorkbookDocument(
     renderPng(target: XlsxPngTarget, options: XlsxPngOptions = {}): Promise<Uint8Array> {
       try {
         const resolved = resolvePngTarget(target, options, parseJson<SheetInfo>(() => doc.sheetInfoJson()).sheetNames);
-        const reported = Object.getOwnPropertyDescriptor(target, Symbol.for('@betteroffice/xlsx/reportedFontCdnErrors'))?.value as Set<Error> | undefined;
+        const reported = Object.getOwnPropertyDescriptor(target, Symbol.for('@neonflower/sheet-core/reportedFontCdnErrors'))?.value as Set<Error> | undefined;
         return renderEnginePng(pngEngine(reported), resolved, options).catch((error: unknown) => Promise.reject(toError(error)));
       } catch (error) {
         return Promise.reject(error);

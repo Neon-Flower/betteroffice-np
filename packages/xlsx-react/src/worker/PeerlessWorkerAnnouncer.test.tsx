@@ -1,6 +1,6 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { afterAll, afterEach, describe, expect, it } from 'bun:test';
-import type { DisplayList } from '@betteroffice/xlsx';
+import type { DisplayList } from '@neonflower/sheet-core';
 import { ActiveCellInputContext, PeerlessWorkerAnnouncer } from './PeerlessWorkerAnnouncer';
 import { WorkerPresentationStore } from './WorkerPresentationStore';
 import type { WorkerPaintResult } from './PeerlessWorkerPaintSource';

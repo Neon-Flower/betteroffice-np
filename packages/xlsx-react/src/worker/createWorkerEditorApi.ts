@@ -1,9 +1,9 @@
 import type {
   CellEdit, CellInputEdit, EditResult, Selection, WorkbookHandle, XlsxEditResult, XlsxReadRequest, XlsxReadResult,
-} from '@betteroffice/xlsx';
-import type { WorkbookEditPeer, WorkbookReplayOp } from '@betteroffice/xlsx/worker';
-import { WorkbookEditPeerFailedError, WorkbookPeerHydrationError } from '@betteroffice/xlsx';
-import { WorkbookRecoveryRefusal, workbookEditPeerOperations } from '@betteroffice/xlsx/worker';
+} from '@neonflower/sheet-core';
+import type { WorkbookEditPeer, WorkbookReplayOp } from '@neonflower/sheet-core/worker';
+import { WorkbookEditPeerFailedError, WorkbookPeerHydrationError } from '@neonflower/sheet-core';
+import { WorkbookRecoveryRefusal, workbookEditPeerOperations } from '@neonflower/sheet-core/worker';
 import type { XlsxWorkerViewerApi } from '../XlsxEditor';
 import { XlsxCommandAdmissionError } from '../commands/createXlsxCommandStore';
 import type { XlsxCommandStore } from '../commands/types';

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { en } from '@betteroffice/xlsx-i18n';
+import { en } from '@neonflower/sheet-i18n';
 import { createXlsxCommandController, pickChord } from './createXlsxCommandStore';
 import { resolveXlsxShortcuts, storeAriaShortcut, storeShortcutLabel } from './shortcuts';
 

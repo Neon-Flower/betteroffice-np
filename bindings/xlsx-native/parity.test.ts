@@ -120,7 +120,7 @@ async function compare<T>(script: (workbook: WorkbookHandle) => T, bytes: Uint8A
 }
 
 describe('xlsx native/wasm package parity', () => {
-  test('each entry exports the names of the matching @betteroffice/xlsx entry', async () => {
+  test('each entry exports the names of the matching @neonflower/sheet-core entry', async () => {
     const manifest = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8'));
     expect(Object.keys(FORMATS.xlsx.entries)).toEqual(Object.keys(manifest.exports));
     for (const [entry, source] of Object.entries(FORMATS.xlsx.entries)) {

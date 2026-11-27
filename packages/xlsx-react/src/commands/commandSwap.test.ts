@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import type { CommandStatus, WorkbookAck } from '@betteroffice/xlsx/worker';
+import type { CommandStatus, WorkbookAck } from '@neonflower/sheet-core/worker';
 import type { InputDraft, InputSeal } from './inputCoordinator';
 import { createPeerlessWorkerInputCoordinator, type PeerlessWorkerCommand, type PeerlessWorkerInputEvent } from './peerlessWorkerInputCoordinator';
 

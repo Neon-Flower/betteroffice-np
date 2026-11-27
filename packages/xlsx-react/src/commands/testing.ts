@@ -1,5 +1,5 @@
-import type { SelectionFormatting, WorkbookSession } from '@betteroffice/xlsx';
-import type { Translations } from '@betteroffice/xlsx-i18n';
+import type { SelectionFormatting, WorkbookSession } from '@neonflower/sheet-core';
+import type { Translations } from '@neonflower/sheet-i18n';
 import type { XlsxCommandBinding } from './createXlsxCommandStore';
 import {
   DEFAULT_FONT_FAMILIES,

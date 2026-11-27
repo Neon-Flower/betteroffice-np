@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import * as React from 'react';
 import JSZip from 'jszip';
-import { XlsxEditor, type XlsxEditorApi, type XlsxWorkerViewerApi } from '@betteroffice/xlsx-react';
+import { XlsxEditor, type XlsxEditorApi, type XlsxWorkerViewerApi } from '@neonflower/sheet-react';
 import sampleUrl from '../../../packages/xlsx/test-fixtures/sample.xlsx?url';
 import chartsUrl from '../../../packages/xlsx/test-fixtures/charts.xlsx?url';
 import { compareCanvasPixels } from './xlsx-canvas-parity';

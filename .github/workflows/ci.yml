@@ -1,9 +1,7 @@
 name: CI
 
 on:
-  pull_request:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -621,7 +619,7 @@ jobs:
 
       - name: Build wasm for parity
         run: |
-          bun run --filter @betteroffice/xlsx build:wasm
+          bun run --filter @neonflower/sheet-core build:wasm
           bun run --filter @betteroffice/pptx build:wasm
           bun run --filter @betteroffice/docx build:wasm
 

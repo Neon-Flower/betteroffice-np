@@ -16,7 +16,7 @@ const native = {
 export const engines = createEngineLoader(native, wasm, warning => process.emitWarning(warning));
 
 export async function wasmBytes(format: 'xlsx' | 'pptx'): Promise<Uint8Array> {
-  const entry = format === 'xlsx' ? import.meta.resolve('@betteroffice/xlsx') : import.meta.resolve('@betteroffice/pptx');
+  const entry = format === 'xlsx' ? import.meta.resolve('@neonflower/sheet-core') : import.meta.resolve('@betteroffice/pptx');
   const directory = entry.endsWith('/src/index.ts') ? './wasm/generated' : './generated';
   return readFile(new URL(`${directory}/${format}_wasm_bg.wasm`, entry));
 }

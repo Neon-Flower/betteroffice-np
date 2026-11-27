@@ -1,4 +1,4 @@
-import type { TranslationKey } from '@betteroffice/xlsx-i18n';
+import type { TranslationKey } from '@neonflower/sheet-i18n';
 import { commandMenuItem, menuSections } from '../../../../shared/react-toolbar/ContextMenu';
 import type { OverflowMenuEntry } from '../../../../shared/react-toolbar/MenuList';
 import { columnLetter } from '../columnLetter';

@@ -1,10 +1,10 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { afterAll, afterEach, beforeAll, describe, expect, test } from 'bun:test';
 import { useRef, useState } from 'react';
-import { createT, en } from '@betteroffice/xlsx-i18n';
+import { createT, en } from '@neonflower/sheet-i18n';
 import type { ReactNode } from 'react';
-import { selectionAt, type WorkbookSession } from '@betteroffice/xlsx';
-import type { CommandStatus, WorkbookAck, WorkbookEditState } from '@betteroffice/xlsx/worker';
+import { selectionAt, type WorkbookSession } from '@neonflower/sheet-core';
+import type { CommandStatus, WorkbookAck, WorkbookEditState } from '@neonflower/sheet-core/worker';
 
 const ownsDom = !GlobalRegistrator.isRegistered;
 if (ownsDom) GlobalRegistrator.register();

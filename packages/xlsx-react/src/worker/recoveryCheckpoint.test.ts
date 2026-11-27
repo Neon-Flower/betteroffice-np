@@ -1,5 +1,5 @@
 import { expect, spyOn, test } from 'bun:test';
-import type { WorkbookSession } from '@betteroffice/xlsx';
+import type { WorkbookSession } from '@neonflower/sheet-core';
 import { createWorkbookSessionRecovery, workbookSessionRecovery } from '../../../xlsx/src/session/clientRecovery';
 import { testSessionCommands } from '../commands/testing';
 import { PeerlessWorkbookSession } from './usePeerlessSessionWorkbook';

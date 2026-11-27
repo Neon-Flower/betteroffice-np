@@ -9,7 +9,7 @@
 - 3773773: Attached agent proposals use the shared engine; standalone behavior is unchanged. Adds opt-in DOCX `editPeer`, `proposeAsync`, `rejectAsync`, `discardAsync`, `keepRevisions`, `replaceText.at`, typed `TrackedRevisionConflictError`, `AcceptDateUnsupportedError` and `ProposalDecidedInEditorError`, and XLSX `getProposalStatus`, `onProposalChange` and `isProposalStale`.
 - 2a1d763: Adds the `formatText` edit step (`set`, `clear` back to the styles, `onUnsupported`). The agents `format_text` tool gains strike, superscript/subscript, colour, highlight, size and font. `EditReceipt` literals must set `skipped`.
 - 62605af: DOCX PNG export draws a placeholder for a picture it cannot draw instead of rejecting the page or leaving it blank; `onDiagnostic` reports each one and why. `strictPictures: true` keeps rejecting. Agent previews warn.
-- cf72bb4: The native packages now export the full `@betteroffice/docx`, `@betteroffice/xlsx` and `@betteroffice/pptx` APIs as ES modules, and `require()` of them needs Node 20.19 or 22.12: `engines` now says so. `@betteroffice/agents`, which depends on them, requires Node 22.12.
+- cf72bb4: The native packages now export the full `@betteroffice/docx`, `@neonflower/sheet-core` and `@betteroffice/pptx` APIs as ES modules, and `require()` of them needs Node 20.19 or 22.12: `engines` now says so. `@betteroffice/agents`, which depends on them, requires Node 22.12.
 - 3e7d0f6: Adds opt-in `setStoryParagraphs` proposals for paragraph rewrites with bullets, alignment, styled runs and `@ref` story targets. Review previews show inserted and deleted text and mark shapes changed by paragraph properties.
 - c10ba8c: Adds opt-in `addTextBox`, `addShape`, `addPicture`, and `removeShape` proposals with local shape and story refs, insertion outlines, deletion strikes, and an 8 MB decoded media total limit. Exports `decodeBrowserPresentationImage` for browser image decoding without WASM.
 - 3313017: Adds opt-in `setSlideLayout` and `setSlideBackground` proposals with `@ref` slide targets. Review previews show layout artwork and inherited picture backgrounds, with translated labels for both changes.
@@ -538,7 +538,7 @@
 - Updated dependencies [6d79fc5]
   - @betteroffice/docx@0.6.0
   - @betteroffice/docx-native@0.6.0
-  - @betteroffice/xlsx@0.6.0
+  - @neonflower/sheet-core@0.6.0
   - @betteroffice/fonts@0.5.0
   - @betteroffice/pptx@0.6.0
   - @betteroffice/pptx-native@0.6.0
@@ -588,7 +588,7 @@
 - Updated dependencies [ae3902a]
 - Updated dependencies [f0f9ffe]
 - Updated dependencies [3b3af14]
-  - @betteroffice/xlsx@0.5.1
+  - @neonflower/sheet-core@0.5.1
   - @betteroffice/pptx@0.5.1
   - @betteroffice/docx@0.5.1
   - @betteroffice/fonts@0.4.2
@@ -726,7 +726,7 @@
 - Updated dependencies [6057fec]
 - Updated dependencies [60b801b]
   - @betteroffice/docx@0.5.0
-  - @betteroffice/xlsx@0.5.0
+  - @neonflower/sheet-core@0.5.0
   - @betteroffice/pptx@0.5.0
   - @betteroffice/fonts@0.4.1
 
@@ -823,5 +823,5 @@
 - Updated dependencies [87b5946]
   - @betteroffice/docx@0.5.0
   - @betteroffice/pptx@0.3.0
-  - @betteroffice/xlsx@0.4.0
+  - @neonflower/sheet-core@0.4.0
   - @betteroffice/fonts@0.4.1

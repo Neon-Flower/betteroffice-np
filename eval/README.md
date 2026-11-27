@@ -482,7 +482,7 @@ BetterOffice MCP tools for document access, with the model selected
 explicitly (for example `codex exec -m gpt-6-luna`). Keep transcripts and
 screenshots outside git.
 
-Build and pack `@betteroffice/docx`, `@betteroffice/fonts`, `@betteroffice/xlsx`,
+Build and pack `@betteroffice/docx`, `@betteroffice/fonts`, `@neonflower/sheet-core`,
 `@betteroffice/pptx` and `@betteroffice/agents`, and install them into a
 separate directory. When testing unreleased builds, use package-manager
 overrides so the packed engines are used throughout the install; otherwise a

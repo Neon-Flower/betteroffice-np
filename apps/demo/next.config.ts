@@ -4,8 +4,8 @@ import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   transpilePackages: [
-    "@betteroffice/xlsx",
-    "@betteroffice/xlsx-react",
+    "@neonflower/sheet-core",
+    "@neonflower/sheet-react",
     "@betteroffice/fonts",
     "@betteroffice/fonts-cjk",
     "@betteroffice/fonts-intl",

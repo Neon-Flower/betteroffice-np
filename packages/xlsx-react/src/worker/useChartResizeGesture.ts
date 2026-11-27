@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react';
 import type { PointerEvent as ReactPointerEvent } from 'react';
-import type { ChartResizeEdges } from '@betteroffice/xlsx';
+import type { ChartResizeEdges } from '@neonflower/sheet-core';
 import { chartResizeEdges, type ChartDragPreview, type ChartResizeHandle } from './chartResize';
 
 export type ChartResizeCommit = (handle: ChartResizeHandle, edges: ChartResizeEdges) => void;

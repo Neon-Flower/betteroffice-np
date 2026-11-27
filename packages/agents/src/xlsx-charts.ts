@@ -1,4 +1,4 @@
-import type { ChartEdit, ChartInfo, ChartMutation } from '@betteroffice/xlsx';
+import type { ChartEdit, ChartInfo, ChartMutation } from '@neonflower/sheet-core';
 import { DocumentToolError } from './types';
 import { integer, textWindow } from './prototype';
 import { batch, failure } from './xlsx-operations';

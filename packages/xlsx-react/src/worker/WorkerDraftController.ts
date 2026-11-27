@@ -1,5 +1,5 @@
-import type { CellAddr, Direction, Selection, XlsxRangeTarget } from '@betteroffice/xlsx';
-import type { WorkbookCommandSelection } from '@betteroffice/xlsx/worker';
+import type { CellAddr, Direction, Selection, XlsxRangeTarget } from '@neonflower/sheet-core';
+import type { WorkbookCommandSelection } from '@neonflower/sheet-core/worker';
 import type { InputDraft } from '../commands/inputCoordinator';
 import type { PeerlessWorkerCommandOptions, PeerlessWorkerCommandTicket, PeerlessWorkerInputCoordinator, PeerlessWorkerInputSeal, PeerlessWorkerPendingInput } from '../commands/peerlessWorkerInputCoordinator';
 import { isMacPlatform } from '../commands/descriptors';

@@ -17,7 +17,7 @@ import type {
   XlsxReplaceStats,
   XlsxSheetEntry,
   XlsxValidationResult,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 import { useTranslation } from '../i18n';
 import { resolvedLocale } from '../i18n/LocaleContext';
 import { toolbarTheme } from '../../../../shared/react-toolbar/theme';

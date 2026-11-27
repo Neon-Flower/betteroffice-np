@@ -7,9 +7,9 @@
 - @betteroffice/docx@0.6.1
 - @betteroffice/docx-react@0.6.1
 - @betteroffice/docx-i18n@0.6.1
-- @betteroffice/xlsx@0.6.1
-- @betteroffice/xlsx-react@0.6.1
-- @betteroffice/xlsx-i18n@0.6.1
+- @neonflower/sheet-core@0.6.1
+- @neonflower/sheet-react@0.6.1
+- @neonflower/sheet-i18n@0.6.1
 - @betteroffice/pptx@0.6.1
 - @betteroffice/pptx-react@0.6.1
 - @betteroffice/pptx-i18n@0.6.1
@@ -566,14 +566,14 @@
 - Updated dependencies [6d79fc5]
   - @betteroffice/docx@0.6.0
   - @betteroffice/docx-react@0.6.0
-  - @betteroffice/xlsx@0.6.0
-  - @betteroffice/xlsx-react@0.6.0
+  - @neonflower/sheet-core@0.6.0
+  - @neonflower/sheet-react@0.6.0
   - @betteroffice/fonts@0.5.0
   - @betteroffice/pptx@0.6.0
   - @betteroffice/fonts-cjk@0.5.0
   - @betteroffice/docx-i18n@0.6.0
   - @betteroffice/pptx-react@0.6.0
-  - @betteroffice/xlsx-i18n@0.6.0
+  - @neonflower/sheet-i18n@0.6.0
   - @betteroffice/pptx-i18n@0.6.0
   - @betteroffice/fonts-intl@0.5.0
   - @betteroffice/fonts-latin@0.5.0
@@ -621,13 +621,13 @@
 - Updated dependencies [ae3902a]
 - Updated dependencies [f0f9ffe]
 - Updated dependencies [3b3af14]
-  - @betteroffice/xlsx@0.5.1
+  - @neonflower/sheet-core@0.5.1
   - @betteroffice/pptx@0.5.1
   - @betteroffice/docx@0.5.1
   - @betteroffice/docx-react@0.5.1
   - @betteroffice/pptx-react@0.5.1
   - @betteroffice/fonts@0.4.2
-  - @betteroffice/xlsx-react@0.5.1
+  - @neonflower/sheet-react@0.5.1
   - @betteroffice/fonts-cjk@0.4.2
 
 ## 0.1.8
@@ -819,8 +819,8 @@
   - @betteroffice/docx-react@0.5.0
   - @betteroffice/docx@0.5.0
   - @betteroffice/pptx-react@0.5.0
-  - @betteroffice/xlsx-react@0.5.0
-  - @betteroffice/xlsx@0.5.0
+  - @neonflower/sheet-react@0.5.0
+  - @neonflower/sheet-core@0.5.0
   - @betteroffice/pptx@0.5.0
   - @betteroffice/fonts@0.4.1
   - @betteroffice/fonts-cjk@0.4.1
@@ -1148,11 +1148,11 @@
 - Updated dependencies [b56efb3]
   - @betteroffice/docx@0.3.0
   - @betteroffice/pptx@0.2.0
-  - @betteroffice/xlsx@0.3.0
+  - @neonflower/sheet-core@0.3.0
   - @betteroffice/docx-react@0.3.0
   - @betteroffice/fonts@0.3.0
   - @betteroffice/pptx-react@0.2.0
-  - @betteroffice/xlsx-react@0.3.0
+  - @neonflower/sheet-react@0.3.0
   - @betteroffice/fonts-cjk@0.3.0
 
 ## 0.1.2
@@ -1161,10 +1161,10 @@
 
 - Updated dependencies [16d33a7]
   - @betteroffice/docx-react@0.2.1
-  - @betteroffice/xlsx-react@0.2.1
+  - @neonflower/sheet-react@0.2.1
   - @betteroffice/pptx-react@0.1.1
   - @betteroffice/pptx@0.1.1
-  - @betteroffice/xlsx@0.2.1
+  - @neonflower/sheet-core@0.2.1
   - @betteroffice/docx@0.2.1
 
 ## 0.1.1
@@ -1290,8 +1290,8 @@
 - Updated dependencies [5798031]
 - Updated dependencies [13016f2]
 - Updated dependencies [e8c4f5b]
-  - @betteroffice/xlsx@0.2.0
-  - @betteroffice/xlsx-react@0.2.0
+  - @neonflower/sheet-core@0.2.0
+  - @neonflower/sheet-react@0.2.0
   - @betteroffice/docx-react@0.2.0
   - @betteroffice/docx@0.2.0
   - @betteroffice/pptx@0.1.0

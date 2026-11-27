@@ -27,8 +27,8 @@ Published under the `@betteroffice` scope. The editors render inside your app wi
 
 - [@betteroffice/docx-react](https://www.npmjs.com/package/@betteroffice/docx-react): the DOCX editor and viewer as a React component, with toolbar, paginated canvas, comments and tracked changes. Use it to embed Word documents in a React app.
 - [@betteroffice/docx](https://www.npmjs.com/package/@betteroffice/docx): the framework-free DOCX core: parsing, CRDT editing, pagination and canvas rendering. Use it for a custom UI or headless DOCX work in JavaScript.
-- [@betteroffice/xlsx-react](https://www.npmjs.com/package/@betteroffice/xlsx-react): the spreadsheet editor and viewer as a React component. Use it to embed Excel workbooks in a React app.
-- [@betteroffice/xlsx](https://www.npmjs.com/package/@betteroffice/xlsx): the framework-free XLSX core: parsing, formula recalculation, grid rendering and PNG export. Use it for a custom grid UI or headless workbook processing.
+- [@neonflower/sheet-react](https://www.npmjs.com/package/@neonflower/sheet-react): the spreadsheet editor and viewer as a React component. Use it to embed Excel workbooks in a React app.
+- [@neonflower/sheet-core](https://www.npmjs.com/package/@neonflower/sheet-core): the framework-free XLSX core: parsing, formula recalculation, grid rendering and PNG export. Use it for a custom grid UI or headless workbook processing.
 - [@betteroffice/pptx-react](https://www.npmjs.com/package/@betteroffice/pptx-react): the slides editor and viewer as a React component. Use it to embed PowerPoint decks in a React app.
 - [@betteroffice/pptx](https://www.npmjs.com/package/@betteroffice/pptx): the framework-free PPTX core: parsing, the slide model with masters and layouts, editing and canvas rendering. Use it for a custom slides UI or headless deck processing.
 - [@betteroffice/agents](https://www.npmjs.com/package/@betteroffice/agents): tools for agents to search, read, edit and preview DOCX, XLSX and PPTX files through a TypeScript SDK or a local MCP server. Use it to let an agent work through large Office files the way it works through source code.
@@ -36,7 +36,7 @@ Published under the `@betteroffice` scope. The editors render inside your app wi
 - [@betteroffice/fonts-cjk](https://www.npmjs.com/package/@betteroffice/fonts-cjk): optional Chinese, Japanese and Korean coverage fonts.
 - [@betteroffice/fonts-intl](https://www.npmjs.com/package/@betteroffice/fonts-intl): optional international Noto coverage fonts.
 - [@betteroffice/fonts-latin](https://www.npmjs.com/package/@betteroffice/fonts-latin): Latin and RTL font pack installed with the manager.
-- [@betteroffice/docx-i18n](https://www.npmjs.com/package/@betteroffice/docx-i18n), [@betteroffice/xlsx-i18n](https://www.npmjs.com/package/@betteroffice/xlsx-i18n), [@betteroffice/pptx-i18n](https://www.npmjs.com/package/@betteroffice/pptx-i18n): UI locale strings for the React editors.
+- [@betteroffice/docx-i18n](https://www.npmjs.com/package/@betteroffice/docx-i18n), [@neonflower/sheet-i18n](https://www.npmjs.com/package/@neonflower/sheet-i18n), [@betteroffice/pptx-i18n](https://www.npmjs.com/package/@betteroffice/pptx-i18n): UI locale strings for the React editors.
 
 ## Rust crates
 

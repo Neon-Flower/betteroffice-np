@@ -76,7 +76,7 @@ if (process.argv.includes('--keep-alive-child')) {
       assert.match(adapter, /sessionWorker\.node\.(?:js|mjs)$/);
       assert.ok(existsSync(adapter), `Missing conditional worker adapter: ${adapter}`);
     }
-    const { openWorkbookSession } = await import(`@betteroffice/xlsx${suffix}/worker`);
+    const { openWorkbookSession } = await import(`@neonflower/sheet-core${suffix}/worker`);
     const workbook = await openWorkbookSession(xlsxBytes);
     let reopenedWorkbook;
     try {

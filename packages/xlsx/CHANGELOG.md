@@ -1,4 +1,4 @@
-# @betteroffice/xlsx
+# @neonflower/sheet-core
 
 ## 0.6.1
 
@@ -211,8 +211,8 @@
 - c688743: Workbooks add `setHyperlink`, `removeHyperlink`, `moveRange`, a `setCellValues` step and a shared `calculation` context. Collaborative workbooks accept merges, freeze panes and hyperlinks, and `createAsyncCollaborationReplica` syncs replicas whose state lives in a worker.
 - c688743: Keyboard navigation follows Excel by default: Ctrl/Meta+Arrow stops at data edges, Ctrl/Meta+A selects in two stages, Ctrl+End reaches the used range, and hidden rows and columns are skipped.
 - c688743: Adds experimental `openWorkbookSession`, which keeps the workbook in a worker for async reads, version-checked edits, saving, per-viewport `call.frame` display lists and cancellation through `signal`.
-- 5455c30: Adds the `@betteroffice/xlsx/worker` entry point with the worker session API: `openWorkbookSession`, `createWorkbookEditSession`, `workbookSessionRecovery` and their types. The root entry still exports them.
-- e8619ae: The internal worker editing plumbing (edit peers, recovery helpers and command protocol types) is exported only from `@betteroffice/xlsx/worker`. The root keeps the public worker session API.
+- 5455c30: Adds the `@neonflower/sheet-core/worker` entry point with the worker session API: `openWorkbookSession`, `createWorkbookEditSession`, `workbookSessionRecovery` and their types. The root entry still exports them.
+- e8619ae: The internal worker editing plumbing (edit peers, recovery helpers and command protocol types) is exported only from `@neonflower/sheet-core/worker`. The root keeps the public worker session API.
 
 ### Patch Changes
 
@@ -464,4 +464,4 @@
 
 ### Patch Changes
 
-- 68d15b8: Fix `@betteroffice/xlsx-react` so its dependency on `@betteroffice/xlsx` resolves to the matching published version.
+- 68d15b8: Fix `@neonflower/sheet-react` so its dependency on `@neonflower/sheet-core` resolves to the matching published version.

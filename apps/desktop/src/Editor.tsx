@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { locales as docxLocales } from "@betteroffice/docx-i18n";
-import { locales as xlsxLocales } from "@betteroffice/xlsx-i18n";
+import { locales as xlsxLocales } from "@neonflower/sheet-i18n";
 import { locales as pptxLocales } from "@betteroffice/pptx-i18n";
 import SharedEditor, {
   legacyDocx,

@@ -3,7 +3,7 @@ import type {
   XlsxExportCell,
   XlsxExportSheet,
   XlsxStructuredContent,
-} from "@betteroffice/xlsx";
+} from "@neonflower/sheet-core";
 
 const SCAN_ROWS = 200;
 const SCAN_COLS = 26;

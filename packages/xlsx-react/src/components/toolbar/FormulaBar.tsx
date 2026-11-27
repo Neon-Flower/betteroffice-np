@@ -1,5 +1,5 @@
-import { parseHyperlinkLocation } from '@betteroffice/xlsx/headless';
-import type { CellAddr } from '@betteroffice/xlsx';
+import { parseHyperlinkLocation } from '@neonflower/sheet-core/headless';
+import type { CellAddr } from '@neonflower/sheet-core';
 import { createContext, useContext, useLayoutEffect, useRef, useState } from 'react';
 import type { CSSProperties, KeyboardEvent, Ref } from 'react';
 import {

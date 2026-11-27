@@ -1,5 +1,5 @@
 {
-  "name": "@betteroffice/xlsx-react",
+  "name": "@neonflower/sheet-react",
   "version": "0.6.1",
   "description": "Excel-faithful React XLSX spreadsheet editor and viewer: full OOXML fidelity, real-time human + AI agent collaboration.",
   "keywords": [
@@ -47,8 +47,8 @@
   },
   "dependencies": {
     "@betteroffice/fonts": "workspace:^",
-    "@betteroffice/xlsx": "workspace:*",
-    "@betteroffice/xlsx-i18n": "workspace:*"
+    "@neonflower/sheet-core": "workspace:*",
+    "@neonflower/sheet-i18n": "workspace:*"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",

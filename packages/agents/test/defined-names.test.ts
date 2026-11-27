@@ -1,7 +1,7 @@
 import { expect, test } from 'bun:test';
 import { openXlsx } from '../src/xlsx';
 import { implicitFontWorkbook } from './format-fixtures';
-import type { XlsxDefinedNameOp } from '@betteroffice/xlsx';
+import type { XlsxDefinedNameOp } from '@neonflower/sheet-core';
 
 test('defined names support typed ops, complete pagination, scopes and save/reopen', async () => {
   const book = await openXlsx(await implicitFontWorkbook());

@@ -30,7 +30,7 @@ interface DeclarationOptions {
 export const FORMATS: Record<string, FormatConfig> = {
   xlsx: {
     packageDir: "packages/xlsx",
-    packageName: "@betteroffice/xlsx",
+    packageName: "@neonflower/sheet-core",
     entries: {
       ".": "src/index.ts",
       "./headless": "src/headless.ts",

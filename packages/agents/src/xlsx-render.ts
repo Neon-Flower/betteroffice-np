@@ -1,6 +1,6 @@
 import { engines, loadCanvas } from '#agents-engines';
 import { createFontProvider, type BundledFontSource } from '@betteroffice/fonts';
-import type { DisplayList, Viewport, WorkbookHandle } from '@betteroffice/xlsx';
+import type { DisplayList, Viewport, WorkbookHandle } from '@neonflower/sheet-core';
 
 export async function renderXlsxRange(
   handle: WorkbookHandle,

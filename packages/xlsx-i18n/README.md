@@ -1,13 +1,13 @@
-# @betteroffice/xlsx-i18n
+# @neonflower/sheet-i18n
 
 UI strings, locale types and translation helpers for the
-[`@betteroffice/xlsx-react`](https://www.npmjs.com/package/@betteroffice/xlsx-react) editor. `en` defines
+[`@neonflower/sheet-react`](https://www.npmjs.com/package/@neonflower/sheet-react) editor. `en` defines
 the strings; the other locales override them.
 
 ## Install
 
 ```bash
-bun add @betteroffice/xlsx-i18n
+bun add @neonflower/sheet-i18n
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ bun add @betteroffice/xlsx-i18n
 Pass a locale to the editor's `i18n` prop:
 
 ```tsx
-import { de } from '@betteroffice/xlsx-i18n';
-import { XlsxEditor } from '@betteroffice/xlsx-react';
+import { de } from '@neonflower/sheet-i18n';
+import { XlsxEditor } from '@neonflower/sheet-react';
 
 export function Editor({ file }: { file: Uint8Array }) {
   return <XlsxEditor file={file} i18n={de} />;
@@ -36,7 +36,7 @@ const custom = { ...de, toolbar: { ...de.toolbar, save: 'Sichern' } };
 `tr`, `uk`, `vi`, `zh-CN` and `zh-TW`. The exports for `pt-BR`, `zh-CN` and `zh-TW` are `ptBR`,
 `zhCN` and `zhTW`. A string a locale has not translated yet appears in English.
 
-Each locale is also its own subpath, for example `@betteroffice/xlsx-i18n/pl`, so an app that picks
+Each locale is also its own subpath, for example `@neonflower/sheet-i18n/pl`, so an app that picks
 the locale at runtime can load only the one it needs. `locales` maps every tag to its strings and
 bundles all of them.
 
@@ -47,7 +47,7 @@ The package exports the types `LocaleStrings`, `PartialLocaleStrings`, `Translat
 Outside React, build a typed `t()` directly:
 
 ```ts
-import { createT, deepMerge, en, de, type LocaleStrings } from '@betteroffice/xlsx-i18n';
+import { createT, deepMerge, en, de, type LocaleStrings } from '@neonflower/sheet-i18n';
 
 const t = createT(deepMerge(en, de) as LocaleStrings, 'de');
 t('toolbar.save'); // 'Speichern'
@@ -56,5 +56,5 @@ t('toolbar.save'); // 'Speichern'
 ## Documentation
 
 - [JavaScript guide](https://docs.betteroffice.dev/docs/javascript)
-- [`@betteroffice/xlsx-react`](https://www.npmjs.com/package/@betteroffice/xlsx-react)
+- [`@neonflower/sheet-react`](https://www.npmjs.com/package/@neonflower/sheet-react)
 - [Changelog](https://github.com/openooxml/betteroffice/blob/main/packages/xlsx-i18n/CHANGELOG.md)

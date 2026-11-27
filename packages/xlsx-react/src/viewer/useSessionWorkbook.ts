@@ -1,9 +1,9 @@
 import type { NavigationContext, NavigationOptions } from '../selectionData';
 import { createSelectionDataNavigation, selectionFrameContains, selectionHidden, selectionMerges } from '../selectionData';
-import { openWorkbookSession, rangeRect, selectionAt } from '@betteroffice/xlsx';
+import { openWorkbookSession, rangeRect, selectionAt } from '@neonflower/sheet-core';
 import type {
   Selection, Viewport, WorkbookFrame, WorkbookSession, WorkbookSheetView,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { XlsxInThreadEditorProps, XlsxPointPosition, XlsxWorkerViewerApi, XlsxWorkerViewerProps } from '../XlsxEditor';
 import { XlsxCommandAdmissionError } from '../commands/createXlsxCommandStore';
@@ -141,7 +141,7 @@ export class ViewerSession {
       return this.selectionNavigation.known(context, cell) || painted?.sheet === context.sheet && painted.version === this.session.confirmedBasis.version &&
         selectionFrameContains(painted.displayList.grid, cell);
     },
-    query: (context: { sheet: number; selection: Selection }, direction: import('@betteroffice/xlsx').Direction | 'usedRange' | 'rowEnd' | 'merge' | undefined) =>
+    query: (context: { sheet: number; selection: Selection }, direction: import('@neonflower/sheet-core').Direction | 'usedRange' | 'rowEnd' | 'merge' | undefined) =>
       this.session.call.selectionData(context.sheet, context.selection.focus.row, context.selection.focus.col, direction),
     apply: (selection: Selection, sheet = this.active) => this.placeCellsAsync(sheet, selection, 'nearest', false),
   });

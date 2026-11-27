@@ -2,7 +2,7 @@ import { beforeAll, expect, test } from 'bun:test';
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import JSZip from 'jszip';
-import { initWasm, openWorkbook } from '@betteroffice/xlsx';
+import { initWasm, openWorkbook } from '@neonflower/sheet-core';
 import { attachXlsx, openXlsx } from '../src/xlsx';
 import { implicitFontWorkbook, xlsxFixture } from './format-fixtures';
 import { initialize } from '../src/prototype';

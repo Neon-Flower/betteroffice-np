@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test';
-import type { WorkbookHandle } from '@betteroffice/xlsx';
+import type { WorkbookHandle } from '@neonflower/sheet-core';
 import { createXlsxPluginHost } from './createXlsxPluginHost';
 import { defineXlsxPlugin } from './defineXlsxPlugin';
 import type { XlsxAnchorGeometryResult, XlsxPluginEvent, XlsxPluginGeometry, XlsxPluginLayout, XlsxPluginSelection } from './types';

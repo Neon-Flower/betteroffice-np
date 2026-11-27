@@ -1,5 +1,5 @@
-import { normalizeRange } from '@betteroffice/xlsx';
-import type { DisplayList, MergedRange, Selection } from '@betteroffice/xlsx';
+import { normalizeRange } from '@neonflower/sheet-core';
+import type { DisplayList, MergedRange, Selection } from '@neonflower/sheet-core';
 import { columnLetter } from '../columnLetter';
 
 export interface AnnouncementStrings {

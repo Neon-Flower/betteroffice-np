@@ -1,7 +1,7 @@
 import { afterEach, describe, expect, mock, spyOn, test } from 'bun:test';
 import { configureFontCdn, type BundledFontFace } from '@betteroffice/fonts';
 import * as fonts from '@betteroffice/fonts';
-import { initWasm, openWorkbook } from '@betteroffice/xlsx';
+import { initWasm, openWorkbook } from '@neonflower/sheet-core';
 import JSZip from 'jszip';
 import { fontAssetResponse, fontRuntimeWithoutPacks, withBrowserFontGlobals } from '../../fonts/src/fontAssets.test-support';
 import { spyOnFontFetch } from '../../fonts/src/fontFetch.test-support';
@@ -12,7 +12,7 @@ import * as scripts from '../../../shared/office-session/textScripts';
 import { configureFontCdn as configureTestFontCdn } from '../../fonts/src/fontCdn';
 import { createSessionHost } from '../../../shared/office-session/host';
 import { createInProcessPair } from '../../../shared/office-session/testing/inProcessTransport';
-import type { DisplayList, TextCmd } from '@betteroffice/xlsx';
+import type { DisplayList, TextCmd } from '@neonflower/sheet-core';
 import { createDefaultFontPainter, xlsxDefaultFontManager } from './defaultFonts';
 import { createWorkbookSession } from '../../xlsx/src/session/client';
 import type { WorkbookSessionMethods } from '../../xlsx/src/session/methods';

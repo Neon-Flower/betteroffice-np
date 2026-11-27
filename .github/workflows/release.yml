@@ -3,8 +3,6 @@ name: Release
 # Pending changesets → open/update a "chore: release" PR (version bumps +
 # CHANGELOGs). No pending changesets → run the gate and publish packages.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
     inputs:
       rehearse:

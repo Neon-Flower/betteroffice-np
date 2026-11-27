@@ -36,7 +36,7 @@ class ResidentEngineWorkerClient {
     workersDestroyed += 1;
   }
 }
-mock.module("@betteroffice/xlsx-react", () => ({
+mock.module("@neonflower/sheet-react", () => ({
   XlsxEditor: () => null,
 }));
 mock.module("@betteroffice/pptx-react", () => ({
@@ -74,7 +74,7 @@ for (const [specifier, exports] of Object.entries({
   "@betteroffice/docx/layout": { configureDefaultFonts: () => {} },
   "@betteroffice/docx/utils": { setGoogleFontsEnabled: () => {} },
   "@betteroffice/docx/collaboration": { CollaborationProvider: Provider },
-  "@betteroffice/xlsx/collaboration": { CollaborationProvider: Provider },
+  "@neonflower/sheet-core/collaboration": { CollaborationProvider: Provider },
   "@betteroffice/pptx/collaboration": { CollaborationProvider: Provider },
   "@betteroffice/fonts": {
     loadBundledFontBytes: async () => Uint8Array.of(1),

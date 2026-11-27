@@ -3,8 +3,8 @@ import {
   buildA11yGrid, cellAtPoint, chartRegionAtPoint, extendTo, hyperlinkAtCell,
   normalizeRange, paintDisplayList, parseHyperlinkLocation, rangeRect,
   safeExternalHyperlink, selectionAt, selectionKeyReducer, toTsv,
-} from '@betteroffice/xlsx';
-import type { CellAddr, CellEdit, CellRange, Selection } from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
+import type { CellAddr, CellEdit, CellRange, Selection } from '@neonflower/sheet-core';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties, KeyboardEvent, MouseEvent } from 'react';
 import type { XlsxWorkerViewerProps } from '../XlsxEditor';

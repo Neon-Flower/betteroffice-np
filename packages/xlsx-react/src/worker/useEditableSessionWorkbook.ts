@@ -1,5 +1,5 @@
-import type { WorkbookHandle, WorkbookSession } from '@betteroffice/xlsx';
-import { failWorkbookEditPeer, type WorkbookEditPeer } from '@betteroffice/xlsx/worker';
+import type { WorkbookHandle, WorkbookSession } from '@neonflower/sheet-core';
+import { failWorkbookEditPeer, type WorkbookEditPeer } from '@neonflower/sheet-core/worker';
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import type { XlsxInThreadEditorProps } from '../XlsxEditor';
 import { XlsxCommandAdmissionError } from '../commands/createXlsxCommandStore';

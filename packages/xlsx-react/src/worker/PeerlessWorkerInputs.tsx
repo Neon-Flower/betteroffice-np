@@ -1,6 +1,6 @@
 import { memo, useCallback, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import type { CSSProperties, ReactNode } from 'react';
-import type { Rect } from '@betteroffice/xlsx';
+import type { Rect } from '@neonflower/sheet-core';
 import { cellEditorColors } from '../viewer/cellEditorColors';
 import { xlsxCommandController } from '../commands/createXlsxCommandStore';
 import { XlsxCommandContext } from '../commands/XlsxCommandProvider';

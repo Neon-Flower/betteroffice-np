@@ -1,6 +1,6 @@
 import { pluginActivationId } from '../../../../shared/plugin-host/gesture';
-import type { WorkbookHandle } from '@betteroffice/xlsx';
-import type { TranslationKey } from '@betteroffice/xlsx-i18n';
+import type { WorkbookHandle } from '@neonflower/sheet-core';
+import type { TranslationKey } from '@neonflower/sheet-i18n';
 import {
   createPluginRuntime,
   type PluginInvocation,

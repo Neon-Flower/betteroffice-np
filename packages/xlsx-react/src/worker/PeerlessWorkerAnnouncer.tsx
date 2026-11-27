@@ -1,6 +1,6 @@
 import { createContext, memo, useContext, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties, RefObject } from 'react';
-import type { WorkbookSheetSummary } from '@betteroffice/xlsx';
+import type { WorkbookSheetSummary } from '@neonflower/sheet-core';
 import { useTranslation } from '../i18n';
 import { WorkerPresentationStore, useWorkerPresentation } from './WorkerPresentationStore';
 import {

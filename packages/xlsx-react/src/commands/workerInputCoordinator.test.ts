@@ -6,7 +6,7 @@ import { workbookEditPeerOperations } from '../../../xlsx/src/session/editPeerIn
 import type { WorkbookReplayOp } from '../../../xlsx/src/session/replay';
 import type {
   CommandStatus, WorkbookAck, WorkbookCommand, WorkbookCommandFrameRequest,
-} from '@betteroffice/xlsx/worker';
+} from '@neonflower/sheet-core/worker';
 import { createTestWorkbookSession, loadWorkbookSessionFixtures } from '../../../xlsx/src/session/testHelpers';
 import { openWorkbook, type WorkbookHandle } from '../../../xlsx/src/wasm/loader';
 import { XlsxCommandAdmissionError } from './createXlsxCommandStore';

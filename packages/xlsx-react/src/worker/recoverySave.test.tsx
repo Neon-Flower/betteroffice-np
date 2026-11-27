@@ -1,8 +1,8 @@
 import { beforeAll, expect, spyOn, test } from 'bun:test';
 import { readFile } from 'node:fs/promises';
 import JSZip from 'jszip';
-import { initWasm, type Proposal, type WorkbookSession } from '@betteroffice/xlsx';
-import type { CommandStatus, WorkbookSharedCommand } from '@betteroffice/xlsx/worker';
+import { initWasm, type Proposal, type WorkbookSession } from '@neonflower/sheet-core';
+import type { CommandStatus, WorkbookSharedCommand } from '@neonflower/sheet-core/worker';
 import { isClientMessage, isHostMessage, SessionFailure, type SessionTransport } from '../../../../shared/office-session';
 import { createInProcessPair } from '../../../../shared/office-session/testing/inProcessTransport';
 import { createSessionClient } from '../../../../shared/office-session/client';

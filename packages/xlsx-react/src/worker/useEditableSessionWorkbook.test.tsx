@@ -1,10 +1,10 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { afterAll, afterEach, describe, expect, mock, spyOn, test } from 'bun:test';
-import * as xlsx from '@betteroffice/xlsx';
-import type { WorkbookHandle, WorkbookSession, WorkbookSheetView } from '@betteroffice/xlsx';
-import type { WorkbookCommand, WorkbookCommandFrame, WorkbookEditState } from '@betteroffice/xlsx/worker';
+import * as xlsx from '@neonflower/sheet-core';
+import type { WorkbookHandle, WorkbookSession, WorkbookSheetView } from '@neonflower/sheet-core';
+import type { WorkbookCommand, WorkbookCommandFrame, WorkbookEditState } from '@neonflower/sheet-core/worker';
 import { SessionFailure } from '../../../../shared/office-session';
-import type { WorkbookEditPeer } from '@betteroffice/xlsx/worker';
+import type { WorkbookEditPeer } from '@neonflower/sheet-core/worker';
 import { createXlsxCommandController, XlsxCommandAdmissionError } from '../commands/createXlsxCommandStore';
 import { PLAIN_FORMATTING, testBinding, testSessionCommands } from '../commands/testing';
 import type { InputDraft } from '../commands/inputCoordinator';

@@ -126,7 +126,7 @@ const server = await createServer({
       '@betteroffice/docx',
       '@betteroffice/docx-react',
       '@betteroffice/pptx',
-      '@betteroffice/xlsx',
+      '@neonflower/sheet-core',
       '@betteroffice/vsdx',
     ],
   },

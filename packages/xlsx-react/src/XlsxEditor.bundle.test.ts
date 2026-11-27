@@ -10,7 +10,7 @@ test('the default editor loads peerless modules only through a dynamic chunk', a
       resolveDir: root, sourcefile: 'default-editor.ts' },
     bundle: true, write: false, minify: true, format: 'esm', platform: 'browser',
     splitting: true, outdir: resolve(root, '.bundle-test'), metafile: true,
-    external: ['react', 'react-dom', 'react/jsx-runtime', '@betteroffice/xlsx', '@betteroffice/xlsx/*', '@betteroffice/xlsx-i18n'],
+    external: ['react', 'react-dom', 'react/jsx-runtime', '@neonflower/sheet-core', '@neonflower/sheet-core/*', '@neonflower/sheet-i18n'],
     logLevel: 'silent',
   });
   const outputs = result.metafile!.outputs;

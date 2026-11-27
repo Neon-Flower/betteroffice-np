@@ -31,7 +31,7 @@
 - ae6e7e1: Fixes collaborative documents that stopped laying out after an undo removed a table cell another collaborator's table still showed. That cell now reads as empty and refuses edits until the undo is redone or its row is deleted. Handle `EditError::CellHasNoStory` and `OpError::CellHasNoStory` in exhaustive matches.
 - 6d8fb19: A table that crossing undos left unlayoutable is now skipped instead of breaking layout; table commands and saves refuse with a coded error until redo restores it or it is deleted. Both engines add `unavailable_tables_from`. Exhaustive matches must handle `OpError::TableUnavailable`.
 - b2ea7f5: The docx and pptx native bindings use mimalloc as their memory allocator, through the default-on `mimalloc` cargo feature. DOCX save, edit and layout get faster and PPTX open and export faster, with a higher peak memory on some documents.
-- cf72bb4: The native packages now export the full `@betteroffice/docx`, `@betteroffice/xlsx` and `@betteroffice/pptx` APIs as ES modules, and `require()` of them needs Node 20.19 or 22.12: `engines` now says so. `@betteroffice/agents`, which depends on them, requires Node 22.12.
+- cf72bb4: The native packages now export the full `@betteroffice/docx`, `@neonflower/sheet-core` and `@betteroffice/pptx` APIs as ES modules, and `require()` of them needs Node 20.19 or 22.12: `engines` now says so. `@betteroffice/agents`, which depends on them, requires Node 22.12.
 - f78484e: Adds `prime_last_slice_cost` to the wasm and native DOCX edit sessions: what the last `prime_save_seed_states_slice` call charged against its byte budget, overshoot included, or 0 (committed-scan slices charge nothing). The docx worker sizes the next slice from it, growing at most twofold.
 
 ### Patch Changes

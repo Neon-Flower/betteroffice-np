@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef } from 'react';
-import { normalizeRange, StaleProposalError } from '@betteroffice/xlsx';
-import type { EditResult, MergedRange, SelectionFormatting, WorkbookHandle } from '@betteroffice/xlsx';
-import type { WorkbookEditPeer } from '@betteroffice/xlsx/worker';
+import { normalizeRange, StaleProposalError } from '@neonflower/sheet-core';
+import type { EditResult, MergedRange, SelectionFormatting, WorkbookHandle } from '@neonflower/sheet-core';
+import type { WorkbookEditPeer } from '@neonflower/sheet-core/worker';
 
 import type { MergeAction } from '../components/Toolbar';
 import {

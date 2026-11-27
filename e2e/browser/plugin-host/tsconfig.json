@@ -17,7 +17,7 @@
       "@betteroffice/docx-react/mini-toolbar": [
         "../../../packages/docx-react/src/mini-toolbar.ts"
       ],
-      "@betteroffice/xlsx-react": [
+      "@neonflower/sheet-react": [
         "../../../packages/xlsx-react/src/index.ts"
       ],
       "@betteroffice/pptx-react": [
@@ -29,10 +29,10 @@
       "@betteroffice/docx/*": [
         "../../../packages/docx/src/*"
       ],
-      "@betteroffice/xlsx": [
+      "@neonflower/sheet-core": [
         "../../../packages/xlsx/src/index.ts"
       ],
-      "@betteroffice/xlsx/*": [
+      "@neonflower/sheet-core/*": [
         "../../../packages/xlsx/src/*"
       ],
       "@betteroffice/pptx": [
@@ -62,10 +62,10 @@
       "@betteroffice/docx-i18n/*": [
         "../../../packages/docx-i18n/src/*"
       ],
-      "@betteroffice/xlsx-i18n": [
+      "@neonflower/sheet-i18n": [
         "../../../packages/xlsx-i18n/src/index.ts"
       ],
-      "@betteroffice/xlsx-i18n/*": [
+      "@neonflower/sheet-i18n/*": [
         "../../../packages/xlsx-i18n/src/*"
       ],
       "@betteroffice/pptx-i18n": [

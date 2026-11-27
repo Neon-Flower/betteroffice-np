@@ -1,11 +1,11 @@
-# @betteroffice/xlsx-react
+# @neonflower/sheet-react
 
 ## 0.6.1
 
 ### Patch Changes
 
-- @betteroffice/xlsx@0.6.1
-- @betteroffice/xlsx-i18n@0.6.1
+- @neonflower/sheet-core@0.6.1
+- @neonflower/sheet-i18n@0.6.1
 
 ## 0.6.0
 
@@ -247,9 +247,9 @@
 - Updated dependencies [14251f8]
 - Updated dependencies [916cbe2]
 - Updated dependencies [f2df1e8]
-  - @betteroffice/xlsx@0.6.0
+  - @neonflower/sheet-core@0.6.0
   - @betteroffice/fonts@0.5.0
-  - @betteroffice/xlsx-i18n@0.6.0
+  - @neonflower/sheet-i18n@0.6.0
 
 ## 0.5.1
 
@@ -269,8 +269,8 @@
 - Updated dependencies [ae3902a]
 - Updated dependencies [f0f9ffe]
 - Updated dependencies [3b3af14]
-  - @betteroffice/xlsx@0.5.1
-  - @betteroffice/xlsx-i18n@0.5.1
+  - @neonflower/sheet-core@0.5.1
+  - @neonflower/sheet-i18n@0.5.1
 
 ## 0.5.0
 
@@ -344,8 +344,8 @@
 - Updated dependencies [87b5946]
 - Updated dependencies [6057fec]
 - Updated dependencies [60b801b]
-  - @betteroffice/xlsx@0.5.0
-  - @betteroffice/xlsx-i18n@0.5.0
+  - @neonflower/sheet-core@0.5.0
+  - @neonflower/sheet-i18n@0.5.0
 
 ## 0.3.0
 
@@ -398,8 +398,8 @@
 - Updated dependencies [d1c6a55]
 - Updated dependencies [b56efb3]
 - Updated dependencies [b56efb3]
-  - @betteroffice/xlsx@0.3.0
-  - @betteroffice/xlsx-i18n@0.3.0
+  - @neonflower/sheet-core@0.3.0
+  - @neonflower/sheet-i18n@0.3.0
 
 ## 0.2.1
 
@@ -407,8 +407,8 @@
 
 - 16d33a7: Fix locale declarations for TypeScript consumers with `skipLibCheck: false` and update React editors to depend on the corrected i18n packages.
 - Updated dependencies [16d33a7]
-  - @betteroffice/xlsx-i18n@0.2.1
-  - @betteroffice/xlsx@0.2.1
+  - @neonflower/sheet-i18n@0.2.1
+  - @neonflower/sheet-core@0.2.1
 
 ## 0.2.0
 
@@ -427,8 +427,8 @@
 - Updated dependencies [5798031]
 - Updated dependencies [13016f2]
 - Updated dependencies [e8c4f5b]
-  - @betteroffice/xlsx@0.2.0
-  - @betteroffice/xlsx-i18n@0.2.0
+  - @neonflower/sheet-core@0.2.0
+  - @neonflower/sheet-i18n@0.2.0
 
 ## 0.1.0
 
@@ -468,8 +468,8 @@
 - Updated dependencies [f5d1b03]
 - Updated dependencies [9534169]
 - Updated dependencies [148ba02]
-  - @betteroffice/xlsx@0.1.0
-  - @betteroffice/xlsx-i18n@0.1.0
+  - @neonflower/sheet-core@0.1.0
+  - @neonflower/sheet-i18n@0.1.0
 
 ## 0.0.8
 
@@ -480,8 +480,8 @@
 - Updated dependencies [4e04087]
 - Updated dependencies [47c37b0]
 - Updated dependencies [0d3baa1]
-  - @betteroffice/xlsx@0.0.8
-  - @betteroffice/xlsx-i18n@0.0.8
+  - @neonflower/sheet-core@0.0.8
+  - @neonflower/sheet-i18n@0.0.8
 
 ## 0.0.7
 
@@ -504,8 +504,8 @@
 - Updated dependencies [793b761]
 - Updated dependencies [c6ad184]
 - Updated dependencies [793b761]
-  - @betteroffice/xlsx@0.0.7
-  - @betteroffice/xlsx-i18n@0.0.7
+  - @neonflower/sheet-core@0.0.7
+  - @neonflower/sheet-i18n@0.0.7
 
 ## 0.0.6
 
@@ -519,15 +519,15 @@
 - 69d62f1: Refine the XLSX and PPTX editor toolbars with compact DOCX-style control rails,
   grouped icon actions, and responsive value fields.
 - Updated dependencies [a34e721]
-  - @betteroffice/xlsx@0.0.6
-  - @betteroffice/xlsx-i18n@0.0.6
+  - @neonflower/sheet-core@0.0.6
+  - @neonflower/sheet-i18n@0.0.6
 
 ## 0.0.5
 
 ### Patch Changes
 
 - Updated dependencies [e8678aa]
-  - @betteroffice/xlsx@0.0.5
+  - @neonflower/sheet-core@0.0.5
 
 ## 0.0.4
 
@@ -535,12 +535,12 @@
 
 - 6a1ab98: Publish the spreadsheet packages as ESM-only and load the WebAssembly core as a separate asset.
 - Updated dependencies [6a1ab98]
-  - @betteroffice/xlsx@0.0.4
+  - @neonflower/sheet-core@0.0.4
 
 ## 0.0.3
 
 ### Patch Changes
 
-- 68d15b8: Fix `@betteroffice/xlsx-react` so its dependency on `@betteroffice/xlsx` resolves to the matching published version.
+- 68d15b8: Fix `@neonflower/sheet-react` so its dependency on `@neonflower/sheet-core` resolves to the matching published version.
 - Updated dependencies [68d15b8]
-  - @betteroffice/xlsx@0.0.3
+  - @neonflower/sheet-core@0.0.3

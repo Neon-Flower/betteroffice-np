@@ -11,7 +11,7 @@
 ### Minor Changes
 
 - b2ea7f5: The docx and pptx native bindings use mimalloc as their memory allocator, through the default-on `mimalloc` cargo feature. DOCX save, edit and layout get faster and PPTX open and export faster, with a higher peak memory on some documents.
-- cf72bb4: The native packages now export the full `@betteroffice/docx`, `@betteroffice/xlsx` and `@betteroffice/pptx` APIs as ES modules, and `require()` of them needs Node 20.19 or 22.12: `engines` now says so. `@betteroffice/agents`, which depends on them, requires Node 22.12.
+- cf72bb4: The native packages now export the full `@betteroffice/docx`, `@neonflower/sheet-core` and `@betteroffice/pptx` APIs as ES modules, and `require()` of them needs Node 20.19 or 22.12: `engines` now says so. `@betteroffice/agents`, which depends on them, requires Node 22.12.
 - 9f46a22: Text in a PowerPoint text box now reflows while you drag a resize handle, and releasing it commits one undoable resize. `PptxRenderer` gains `previewShapeRectJson`.
 - a45ba76: `renderPng({ slide }, options?)` on the presentation handle renders through the native rasterizer, with the same targets, options and errors as the browser.
 - db4ab57: Now exposes exactly the `@betteroffice/pptx` API (same entry points, exports and types) on the native engine for Node.js, Bun and Deno; pick the engine by import. The `browser` condition throws. The `openPresentation(Buffer)`/`Presentation` facade is removed.

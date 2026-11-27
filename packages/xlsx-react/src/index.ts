@@ -1,6 +1,6 @@
 /**
- * `@betteroffice/xlsx-react` — the React chrome for the xlsx editor. Framework
- * glue only; all compute lives in `@betteroffice/xlsx`.
+ * `@neonflower/sheet-react` — the React chrome for the xlsx editor. Framework
+ * glue only; all compute lives in `@neonflower/sheet-core`.
  */
 
 export { XlsxEditor, XlsxSaveRefusedError } from './XlsxEditor';
@@ -169,4 +169,4 @@ export type {
   XlsxHeaderFooterPair,
   XlsxSheetHeaderFooter,
   XlsxSheetVisibility,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';

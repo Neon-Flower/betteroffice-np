@@ -158,13 +158,13 @@ function importsCollaborationAtRuntime(path: string): boolean {
   const source = ts.createSourceFile(path, readFileSync(path, 'utf8'), ts.ScriptTarget.Latest, true);
   return source.statements.some((node) => {
     if (ts.isImportDeclaration(node) && ts.isStringLiteral(node.moduleSpecifier) &&
-      node.moduleSpecifier.text === '@betteroffice/xlsx/collaboration' && !node.importClause?.isTypeOnly) {
+      node.moduleSpecifier.text === '@neonflower/sheet-core/collaboration' && !node.importClause?.isTypeOnly) {
       const bindings = node.importClause?.namedBindings;
       return !!node.importClause?.name || !bindings || !ts.isNamedImports(bindings) ||
         bindings.elements.some((entry) => !entry.isTypeOnly);
     }
     return ts.isExportDeclaration(node) && !node.isTypeOnly && !!node.moduleSpecifier &&
-      ts.isStringLiteral(node.moduleSpecifier) && node.moduleSpecifier.text === '@betteroffice/xlsx/collaboration';
+      ts.isStringLiteral(node.moduleSpecifier) && node.moduleSpecifier.text === '@neonflower/sheet-core/collaboration';
   });
 }
 

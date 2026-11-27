@@ -18,7 +18,7 @@ function history(downloads) {
 /** A registry table; every package answers 200 unless overridden. */
 function registries(overrides = {}) {
   const table = {
-    [NPM_LISTING]: () => json({ "@betteroffice/docx": "write", "@betteroffice/xlsx": "write", "other": "read" }),
+    [NPM_LISTING]: () => json({ "@betteroffice/docx": "write", "@neonflower/sheet-core": "write", "other": "read" }),
     [npm("docx")]: () => days(60, 40),
     [npm("xlsx")]: () => days(20),
     [CRATES_SEARCH]: () =>

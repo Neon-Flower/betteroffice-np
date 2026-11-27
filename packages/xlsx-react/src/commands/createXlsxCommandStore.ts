@@ -1,5 +1,5 @@
 import { trackPluginGestures } from '../../../../shared/plugin-host/gesture';
-import type { Translations } from '@betteroffice/xlsx-i18n';
+import type { Translations } from '@neonflower/sheet-i18n';
 import {
   isMacPlatform,
   isPluginCommandId,

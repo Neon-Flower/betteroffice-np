@@ -1,7 +1,7 @@
 import {
   cellRect, paintDisplayList, rangeRect, type CellInputEdit, type DisplayList, type DrawCmd, type Rect, type TextCmd,
-} from '@betteroffice/xlsx';
-import type { WorkbookAck } from '@betteroffice/xlsx/worker';
+} from '@neonflower/sheet-core';
+import type { WorkbookAck } from '@neonflower/sheet-core/worker';
 import type { PeerlessWorkerPaintSource as WorkerPaintSource, WorkerPaintResult } from './PeerlessWorkerPaintSource';
 
 export interface WorkerCellEchoCell {

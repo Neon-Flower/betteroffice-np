@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import { XlsxEditor, defineXlsxPlugin, type XlsxPluginContext, type XlsxPluginError } from '@betteroffice/xlsx-react';
+import { XlsxEditor, defineXlsxPlugin, type XlsxPluginContext, type XlsxPluginError } from '@neonflower/sheet-react';
 import { errors, expose, rectOf, workbookName } from '../common/probe';
 
 let context: XlsxPluginContext<null> | null = null;

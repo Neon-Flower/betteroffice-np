@@ -1,4 +1,4 @@
-import type { CellPoint, RangeStylePatch, XlsxCellValue, XlsxEditStep, XlsxDefinedNameOp, ConditionalFormatInfo } from '@betteroffice/xlsx';
+import type { CellPoint, RangeStylePatch, XlsxCellValue, XlsxEditStep, XlsxDefinedNameOp, ConditionalFormatInfo } from '@neonflower/sheet-core';
 import { DocumentToolError } from './types';
 import { integer, plainText, textWindow, unwrap } from './prototype';
 import { address, corners, type XlsxAgentWorkbook } from './xlsx';

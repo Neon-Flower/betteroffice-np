@@ -1,4 +1,4 @@
-import type { DisplayList, GridMeta, MergedRange, Viewport, WorkbookFrame } from '@betteroffice/xlsx';
+import type { DisplayList, GridMeta, MergedRange, Viewport, WorkbookFrame } from '@neonflower/sheet-core';
 
 export interface WorkerPaintRequest {
   generation: number;

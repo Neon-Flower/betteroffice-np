@@ -1,5 +1,5 @@
 import { describe, expect, it, mock } from 'bun:test';
-import type { WorkbookSheetView } from '@betteroffice/xlsx';
+import type { WorkbookSheetView } from '@neonflower/sheet-core';
 import type { WorkerPaintResult } from './PeerlessWorkerPaintSource';
 import { WorkerPresentationStore } from './WorkerPresentationStore';
 

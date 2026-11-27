@@ -1,4 +1,4 @@
-import type { ChartResizeEdges, Rect } from '@betteroffice/xlsx';
+import type { ChartResizeEdges, Rect } from '@neonflower/sheet-core';
 
 export type ChartResizeHandle = 'nw' | 'n' | 'ne' | 'e' | 'se' | 's' | 'sw' | 'w';
 

@@ -6,9 +6,9 @@ describe("npm downloads", () => {
     expect(
       officialPackageNames({
         "@betteroffice/docx": "write",
-        "@betteroffice/xlsx": "write",
+        "@neonflower/sheet-core": "write",
         "other-package": "read",
       }),
-    ).toEqual(["@betteroffice/docx", "@betteroffice/xlsx"]);
+    ).toEqual(["@betteroffice/docx", "@neonflower/sheet-core"]);
   });
 });

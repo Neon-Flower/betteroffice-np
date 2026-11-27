@@ -21,6 +21,6 @@ test('header footer types are exported from the root', () => {
   };
   expect(facts.odd.header).toEqual(text);
   for (const name of ['XlsxHeaderFooterText', 'XlsxHeaderFooterPair', 'XlsxSheetHeaderFooter']) {
-    expect(index).toMatch(new RegExp(`export\\s+type\\s*\\{[^}]*\\b${name}\\b[^}]*\\}\\s*from\\s*['"]@betteroffice/xlsx['"]`));
+    expect(index).toMatch(new RegExp(`export\\s+type\\s*\\{[^}]*\\b${name}\\b[^}]*\\}\\s*from\\s*['"]@neonflower/sheet-core['"]`));
   }
 });

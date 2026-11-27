@@ -1,4 +1,4 @@
-// @betteroffice/xlsx "./collaboration" public API surface
+// @neonflower/sheet-core "./collaboration" public API surface
 // Regenerate: bun scripts/api-surface.ts --write xlsx
 // ---- collaboration/asyncReplica.d.ts ----
 import type { CollaborationPipeChannel } from '../../../../shared/collaboration-pipe/main';

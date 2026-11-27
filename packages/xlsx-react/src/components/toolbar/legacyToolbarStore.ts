@@ -1,4 +1,4 @@
-import type { TFunction } from '@betteroffice/xlsx-i18n';
+import type { TFunction } from '@neonflower/sheet-i18n';
 import {
   isPluginCommandId,
   XLSX_COMMAND_DESCRIPTORS,

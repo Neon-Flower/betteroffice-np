@@ -7,17 +7,17 @@ import {
   buildA11yGrid, cellAtPoint, cellRect, chartRegionAtPoint, extendTo, fromTsv, hyperlinkAtCell, isProposalsAvailable,
   moveFocus, normalizeRange, paintDisplayList, parseHyperlinkLocation, rangeRect, safeExternalHyperlink, selectionAt,
   selectionKeyReducer, toTsv, WorkbookEditPeerFailedError,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 import { XLSX_MAX_COLUMNS, XLSX_MAX_ROWS } from '../sheetLimits';
 import {
   createWorkbookRecoveryMutators, localNowSerial, WorkbookRecoveryRefusal, workbookEditPeerOperations,
   workbookSessionInternals,
-} from '@betteroffice/xlsx/worker';
+} from '@neonflower/sheet-core/worker';
 import type {
   CapturedFormat, CellAddr, CellEdit, CellInputEdit, CellRange, ChartResizeEdges, Direction, DisplayList, EditResult,
   Proposal, Rect, Selection, WorkbookFrame, WorkbookHandle, WorkbookSheetView, XlsxCellAddress, XlsxEditResult,
-} from '@betteroffice/xlsx';
-import type { WorkbookReplayOp } from '@betteroffice/xlsx/worker';
+} from '@neonflower/sheet-core';
+import type { WorkbookReplayOp } from '@neonflower/sheet-core/worker';
 import { useDefaultFonts } from '../useDefaultFonts';
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties, KeyboardEvent, MouseEvent, SetStateAction, SyntheticEvent } from 'react';

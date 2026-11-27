@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { initWasm, openWorkbook } from '@betteroffice/xlsx';
+import { initWasm, openWorkbook } from '@neonflower/sheet-core';
 import {
   XlsxEditor,
   defineXlsxPlugin,
@@ -11,7 +11,7 @@ import {
   type XlsxPluginEvent,
   type XlsxPluginNavigationResult,
   type XlsxPluginSelection,
-} from '@betteroffice/xlsx-react';
+} from '@neonflower/sheet-react';
 import workbookUrl from '../../../packages/xlsx/test-fixtures/sample.xlsx?url';
 
 type ProbeContext = XlsxPluginContext<null>;

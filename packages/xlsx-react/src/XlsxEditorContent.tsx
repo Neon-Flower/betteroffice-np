@@ -34,7 +34,7 @@ import {
   selectionKeyReducer,
   safeExternalHyperlink,
   toTsv,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 import type {
   CellAddr,
   CellEdit,
@@ -60,8 +60,8 @@ import type {
   XlsxEditResult,
   XlsxFindResult,
   XlsxValidationResult,
-} from '@betteroffice/xlsx';
-import type { AwarenessPeer, CollaborationReplica } from '@betteroffice/xlsx/collaboration';
+} from '@neonflower/sheet-core';
+import type { AwarenessPeer, CollaborationReplica } from '@neonflower/sheet-core/collaboration';
 import { XLSX_MAX_COLUMNS, XLSX_MAX_ROWS } from './sheetLimits';
 import { CellClipboard, clipboardMarker, parseCellClipboardText, readCellClipboard } from './clipboard';
 import { chartResizeRect, chartResizeSpace, type ChartDragPreview, type SelectedChart } from './worker/chartResize';

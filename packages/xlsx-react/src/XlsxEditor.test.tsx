@@ -21,9 +21,9 @@ import {
   isPngExportAvailable,
   openWorkbook,
   selectionAt,
-} from '@betteroffice/xlsx';
-import * as xlsx from '@betteroffice/xlsx';
-import { XLSX_MAX_COLUMNS, XLSX_MAX_ROWS } from '@betteroffice/xlsx/collaboration';
+} from '@neonflower/sheet-core';
+import * as xlsx from '@neonflower/sheet-core';
+import { XLSX_MAX_COLUMNS, XLSX_MAX_ROWS } from '@neonflower/sheet-core/collaboration';
 import type {
   CellAddr,
   ChartRegion,
@@ -31,7 +31,7 @@ import type {
   Selection,
   WorkbookHandle,
   XlsxEditResult,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 import type { RenderResult } from '@testing-library/react';
 import { isMacPlatform } from './commands/descriptors';
 import { useXlsxCommands } from './commands/hooks';

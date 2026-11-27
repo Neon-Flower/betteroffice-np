@@ -1,10 +1,10 @@
 import type {
   Selection, WorkbookHandle, XlsxEditRequest, XlsxEditResult, XlsxFindRequest, XlsxFindResult,
   XlsxReadRequest, XlsxReadResult, XlsxValidationResult,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 import type { RemoteFontProvider } from '@betteroffice/fonts/remote';
-import type { CollaborationAwareness, CollaborationReplica } from '@betteroffice/xlsx/collaboration';
-import type { Translations } from '@betteroffice/xlsx-i18n';
+import type { CollaborationAwareness, CollaborationReplica } from '@neonflower/sheet-core/collaboration';
+import type { Translations } from '@neonflower/sheet-i18n';
 import type { XlsxCommandStore } from './commands/types';
 import type { XlsxShortcuts } from './commands/shortcuts';
 import type { ShortcutIssue } from '../../../shared/keyboard/resolve';

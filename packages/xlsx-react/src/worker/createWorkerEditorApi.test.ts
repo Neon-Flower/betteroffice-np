@@ -1,11 +1,11 @@
 import { describe, expect, mock, test } from 'bun:test';
-import { selectionAt } from '@betteroffice/xlsx';
+import { selectionAt } from '@neonflower/sheet-core';
 import type {
   CellEdit, EditResult, WorkbookHandle, XlsxEditRequest, XlsxEditResult,
   XlsxFindRequest, XlsxReadRequest, XlsxReadResult, XlsxValidationResult,
-} from '@betteroffice/xlsx';
-import { WorkbookEditPeerFailedError } from '@betteroffice/xlsx';
-import type { WorkbookEditPeer } from '@betteroffice/xlsx/worker';
+} from '@neonflower/sheet-core';
+import { WorkbookEditPeerFailedError } from '@neonflower/sheet-core';
+import type { WorkbookEditPeer } from '@neonflower/sheet-core/worker';
 import { createXlsxCommandController } from '../commands/createXlsxCommandStore';
 import type { InputDraft } from '../commands/inputCoordinator';
 import { createWorkerInputCoordinator } from '../commands/workerInputCoordinator';

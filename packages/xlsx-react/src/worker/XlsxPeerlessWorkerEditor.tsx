@@ -8,12 +8,12 @@ import {
   cellAtPoint, cellRect, chartRegionAtPoint, extendTo, hyperlinkAtCell, isProposalsAvailable,
   normalizeRange, paintDisplayList, parseHyperlinkLocation, safeExternalHyperlink, selectionAt,
   selectionKeyReducer, toTsv,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 import type {
   CellAddr, CellInputEdit, CellRange, ChartResizeEdges, Proposal, Selection, WorkbookSheetView,
   WorkbookSheetSummary, XlsxCellAddress, XlsxEditResult, XlsxRangeTarget, XlsxValidationResult,
-} from '@betteroffice/xlsx';
-import type { WorkbookCommandSelection } from '@betteroffice/xlsx/worker';
+} from '@neonflower/sheet-core';
+import type { WorkbookCommandSelection } from '@neonflower/sheet-core/worker';
 import { editorExportFaces, useDefaultFonts } from '../useDefaultFonts';
 import { memo, useCallback, useEffect, useId, useLayoutEffect, useMemo, useReducer, useRef, useState } from 'react';
 import type { KeyboardEvent, MouseEvent, SetStateAction, SyntheticEvent } from 'react';
@@ -489,7 +489,7 @@ export function XlsxPeerlessWorkerEditor(props: PeerlessSessionWorkbookProps) {
     activeCell: (selected: Selection) => selected.anchor,
     limits, hidden, merges,
     known: geometryKnown,
-    query: (context: { sheet: number; selection: Selection }, direction: import('@betteroffice/xlsx').Direction | 'usedRange' | 'rowEnd' | 'merge' | undefined) =>
+    query: (context: { sheet: number; selection: Selection }, direction: import('@neonflower/sheet-core').Direction | 'usedRange' | 'rowEnd' | 'merge' | undefined) =>
       ownerRef.current!.session.call.selectionData(context.sheet, context.selection.focus.row, context.selection.focus.col, direction),
     apply: (next: Selection, sheet = activeRef.current) => {
       placeSelection(sheet, next);

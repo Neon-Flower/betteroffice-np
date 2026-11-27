@@ -6,8 +6,8 @@
 
 - @betteroffice/docx@0.6.1
 - @betteroffice/docx-react@0.6.1
-- @betteroffice/xlsx@0.6.1
-- @betteroffice/xlsx-react@0.6.1
+- @neonflower/sheet-core@0.6.1
+- @neonflower/sheet-react@0.6.1
 - @betteroffice/pptx@0.6.1
 - @betteroffice/pptx-react@0.6.1
 
@@ -559,8 +559,8 @@
 - Updated dependencies [6d79fc5]
   - @betteroffice/docx@0.6.0
   - @betteroffice/docx-react@0.6.0
-  - @betteroffice/xlsx@0.6.0
-  - @betteroffice/xlsx-react@0.6.0
+  - @neonflower/sheet-core@0.6.0
+  - @neonflower/sheet-react@0.6.0
   - @betteroffice/fonts@0.5.0
   - @betteroffice/pptx@0.6.0
   - @betteroffice/fonts-cjk@0.5.0

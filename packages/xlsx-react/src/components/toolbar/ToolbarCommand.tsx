@@ -1,6 +1,6 @@
 import { useContext, useRef } from 'react';
 import type { ComponentType, ReactNode, RefObject } from 'react';
-import type { TFunction } from '@betteroffice/xlsx-i18n';
+import type { TFunction } from '@neonflower/sheet-i18n';
 import type { OverflowMenuEntry } from '../../../../../shared/react-toolbar/OverflowMenu';
 import {
   xlsxCommandController,

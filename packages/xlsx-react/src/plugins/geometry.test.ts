@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import type { DisplayList, GridMeta, Proposal } from '@betteroffice/xlsx';
+import type { DisplayList, GridMeta, Proposal } from '@neonflower/sheet-core';
 import { positionAtPoint } from '../viewer/sessionGeometry';
 import type { XlsxPointPosition } from '../XlsxEditor.types';
 import { createPeerlessPluginGeometry } from './createPeerlessPluginDocument';

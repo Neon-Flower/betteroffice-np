@@ -1,4 +1,4 @@
-import type { WorkbookHandle, XlsxEditRequest, XlsxEditResult, XlsxEditRefusal } from '@betteroffice/xlsx';
+import type { WorkbookHandle, XlsxEditRequest, XlsxEditResult, XlsxEditRefusal } from '@neonflower/sheet-core';
 import type { XlsxCommandController } from '../commands/createXlsxCommandStore';
 import type { XlsxAdmission, XlsxPluginEditorAccess, XlsxPluginNavigator } from './createPluginClients';
 import type { XlsxPluginReadClient, XlsxPluginSelection } from './types';

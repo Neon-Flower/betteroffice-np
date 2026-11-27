@@ -1,6 +1,6 @@
 import { describe, expect, it, mock } from 'bun:test';
-import { normalizeRange, selectionAt, selectionKeyReducer } from '@betteroffice/xlsx';
-import type { KeyInput, Selection, SelectionData } from '@betteroffice/xlsx';
+import { normalizeRange, selectionAt, selectionKeyReducer } from '@neonflower/sheet-core';
+import type { KeyInput, Selection, SelectionData } from '@neonflower/sheet-core';
 import * as selectionHelpers from './selectionData';
 import { deriveLimits } from './viewer/sessionGeometry';
 import { MAX_CLEAR_CELLS, clearedCells, createSelectionDataNavigation, sameSelection, selectionDataRequest, selectionHidden } from './selectionData';

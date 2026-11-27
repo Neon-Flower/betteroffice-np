@@ -1,4 +1,4 @@
-# @betteroffice/xlsx
+# @neonflower/sheet-core
 
 Framework-free XLSX parsing, formula calculation, editing, and rendering through a Rust/WebAssembly
 engine. Includes canvas painting, viewport, hit-testing, accessibility, and clipboard helpers.
@@ -6,7 +6,7 @@ engine. Includes canvas painting, viewport, hit-testing, accessibility, and clip
 ## Install
 
 ```bash
-bun add @betteroffice/xlsx
+bun add @neonflower/sheet-core
 ```
 
 No peer dependencies.
@@ -17,7 +17,7 @@ Sheet, row and column indices are zero-based, so `editCell(0, 9, 2, ...)` writes
 first sheet.
 
 ```ts
-import { initWasm, openWorkbook } from '@betteroffice/xlsx';
+import { initWasm, openWorkbook } from '@neonflower/sheet-core';
 
 export async function updateWorkbook(bytes: Uint8Array): Promise<Uint8Array> {
   await initWasm();
@@ -41,7 +41,7 @@ through the protection, which stays in the file; a collaborative workbook refuse
 
 ## Entry points
 
-These entry points are exported from `@betteroffice/xlsx`:
+These entry points are exported from `@neonflower/sheet-core`:
 
 | entry point | description |
 | --- | --- |
@@ -64,7 +64,7 @@ These entry points are exported from `@betteroffice/xlsx`:
 for the device pixel ratio and give the canvas its logical CSS dimensions:
 
 ```ts
-import { paintDisplayList, type WorkbookHandle } from '@betteroffice/xlsx';
+import { paintDisplayList, type WorkbookHandle } from '@neonflower/sheet-core';
 
 export function drawWorkbook(workbook: WorkbookHandle, canvas: HTMLCanvasElement) {
   const dpr = window.devicePixelRatio || 1;
@@ -81,7 +81,7 @@ export function drawWorkbook(workbook: WorkbookHandle, canvas: HTMLCanvasElement
 
 For a custom grid, use `cellAtPoint`, `cellRect`, and `rangeRect` for hit-testing and geometry,
 `buildA11yGrid` for accessibility data, and `toTsv` / `fromTsv` for clipboard text.
-The `@betteroffice/xlsx/headless` entry exports pure grid helpers and types without the canvas painter
+The `@neonflower/sheet-core/headless` entry exports pure grid helpers and types without the canvas painter
 or WASM loader.
 
 ## Range moves
@@ -124,13 +124,13 @@ code `canvas-unavailable`; use `@betteroffice/xlsx-native` for PNG export in tha
 
 Node.js >= 20.16 / 22.3 runs worker sessions on `worker_threads`, keeping the process alive until the session is disposed.
 
-The low-level `openWorkbookSession` API (also exported from `@betteroffice/xlsx/worker`) can
+The low-level `openWorkbookSession` API (also exported from `@neonflower/sheet-core/worker`) can
 change in minor releases. It returns a `WorkbookSession` with
 promise-returning operations through `session.call`, plus asynchronous `session.save()` and
 `session.dispose()` methods.
 
 The React editor uses a worker by default and exposes its own asynchronous API. Use
-[`@betteroffice/xlsx-react`](https://www.npmjs.com/package/@betteroffice/xlsx-react) for the editor UI.
+[`@neonflower/sheet-react`](https://www.npmjs.com/package/@neonflower/sheet-react) for the editor UI.
 
 ## Edit proposals
 
@@ -156,7 +156,7 @@ for scopes, hidden content, limits, and byte-based exports.
 
 ## Collaboration
 
-The `@betteroffice/xlsx/collaboration` entry exports `CollaborationProvider` for connecting replicas
+The `@neonflower/sheet-core/collaboration` entry exports `CollaborationProvider` for connecting replicas
 to a binary transport. See the [collaboration guide](https://docs.betteroffice.dev/docs/collaboration)
 for provider lifecycle, transport setup, and shared starting state.
 
@@ -182,5 +182,5 @@ milliseconds alongside their results. See
 
 - [JavaScript guide](https://docs.betteroffice.dev/docs/javascript)
 - [Package guide](https://docs.betteroffice.dev/docs/packages)
-- [React editor on npm](https://www.npmjs.com/package/@betteroffice/xlsx-react)
+- [React editor on npm](https://www.npmjs.com/package/@neonflower/sheet-react)
 - [Repository](https://github.com/openooxml/betteroffice)

@@ -1,9 +1,9 @@
 import { useLayoutEffect, useRef } from 'react';
-import { normalizeRange } from '@betteroffice/xlsx';
-import type { WorkbookHandle, WorkbookSession, XlsxFontFace, XlsxPngFont, XlsxRangeTarget } from '@betteroffice/xlsx';
+import { normalizeRange } from '@neonflower/sheet-core';
+import type { WorkbookHandle, WorkbookSession, XlsxFontFace, XlsxPngFont, XlsxRangeTarget } from '@neonflower/sheet-core';
 import type {
   WorkbookAck, WorkbookCommandSelection, WorkbookCommandFrameRequest, WorkbookEditState,
-} from '@betteroffice/xlsx/worker';
+} from '@neonflower/sheet-core/worker';
 import type { WorkbookFormatTokenResult } from '../../../xlsx/src/session/commandProtocol';
 
 import {

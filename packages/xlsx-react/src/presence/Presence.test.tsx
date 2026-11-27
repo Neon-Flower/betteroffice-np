@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'bun:test';
 import { renderToStaticMarkup } from 'react-dom/server';
-import type { GridMeta, MergedRange } from '@betteroffice/xlsx';
-import { colorForClientId, type AwarenessPeer } from '@betteroffice/xlsx/collaboration';
+import type { GridMeta, MergedRange } from '@neonflower/sheet-core';
+import { colorForClientId, type AwarenessPeer } from '@neonflower/sheet-core/collaboration';
 import { LocaleProvider } from '../i18n';
 import { expandRangeToMergedCells, PresenceStrip, RemoteSelections } from './Presence';
 

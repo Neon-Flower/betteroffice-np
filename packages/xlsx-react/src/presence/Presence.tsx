@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
-import { rangeRect } from '@betteroffice/xlsx';
-import type { GridMeta, MergedRange } from '@betteroffice/xlsx';
-import type { AwarenessPeer } from '@betteroffice/xlsx/collaboration';
+import { rangeRect } from '@neonflower/sheet-core';
+import type { GridMeta, MergedRange } from '@neonflower/sheet-core';
+import type { AwarenessPeer } from '@neonflower/sheet-core/collaboration';
 import {
   AWARENESS_LABEL_DURATION_MS,
   normalizeAwarenessColor,

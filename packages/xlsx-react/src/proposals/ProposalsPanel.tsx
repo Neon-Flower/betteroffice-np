@@ -5,7 +5,7 @@
  * accepts surface an inline warning with a force-apply.
  */
 
-import type { Proposal } from '@betteroffice/xlsx';
+import type { Proposal } from '@neonflower/sheet-core';
 import type { CSSProperties } from 'react';
 import { xlsxCommandController } from '../commands/createXlsxCommandStore';
 import { useXlsxCommands, useXlsxCommandState } from '../commands/hooks';

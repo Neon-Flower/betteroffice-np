@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { CSSProperties, MouseEvent as ReactMouseEvent, PointerEvent as ReactPointerEvent, ReactNode, WheelEvent as ReactWheelEvent } from 'react';
-import { normalizeRange, type DisplayList, type GridMeta, type Selection } from '@betteroffice/xlsx';
+import { normalizeRange, type DisplayList, type GridMeta, type Selection } from '@neonflower/sheet-core';
 import { XLSX_MAX_COLUMNS, XLSX_MAX_ROWS } from '../sheetLimits';
 import { columnLetter } from '../columnLetter';
 

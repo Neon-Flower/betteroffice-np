@@ -8,7 +8,7 @@ const messages: Record<XlsxEngineWarning, string> = {
   'no-offscreen-canvas': '[XlsxEditor] `OffscreenCanvas` is not available in this environment; using the deprecated in-thread engine.',
   'legacy-sync-api': `[XlsxEditor] \`${LEGACY_SYNC_API}\` keeps the deprecated synchronous API on the in-thread engine, removed in 0.7.0. Omit it to use the async editor.`,
 };
-const warningKey = Symbol.for('@betteroffice/xlsx-react/engine-warnings');
+const warningKey = Symbol.for('@neonflower/sheet-react/engine-warnings');
 const registry = globalThis as typeof globalThis & { [warningKey]?: Set<string> };
 const warned = registry[warningKey] ??= new Set<string>();
 

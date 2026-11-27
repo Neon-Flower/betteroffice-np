@@ -1,15 +1,15 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { afterAll, afterEach, beforeEach, describe, expect, it, mock, spyOn } from 'bun:test';
-import * as xlsx from '@betteroffice/xlsx';
+import * as xlsx from '@neonflower/sheet-core';
 import type {
   DisplayList, Viewport, WorkbookFrame, WorkbookSession, WorkbookSheetView,
-} from '@betteroffice/xlsx';
+} from '@neonflower/sheet-core';
 import { XlsxEditor } from '../XlsxEditor';
 import type { XlsxInThreadEditorProps, XlsxWorkerViewerApi } from '../XlsxEditor';
 import { EditorToolbar } from '../components/EditorToolbar';
 import { ToolbarCommandButton } from '../components/toolbar/ToolbarCommand';
 import { workbookSessionOpener, ViewerSession } from './useSessionWorkbook';
-import { XLSX_MAX_COLUMNS, XLSX_MAX_ROWS } from '@betteroffice/xlsx/collaboration';
+import { XLSX_MAX_COLUMNS, XLSX_MAX_ROWS } from '@neonflower/sheet-core/collaboration';
 import { testSessionCommands } from '../commands/testing';
 
 const ownsDom = !GlobalRegistrator.isRegistered;

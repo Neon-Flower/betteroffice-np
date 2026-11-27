@@ -1,5 +1,5 @@
-import type { CellAddr, CellRange, DisplayList, MergedRange, Rect, SelectionLimits, SheetInfo, Viewport, WorkbookSheetView } from '@betteroffice/xlsx';
-import { cellAtPoint, cellRect, chartRegionAtPoint } from '@betteroffice/xlsx';
+import type { CellAddr, CellRange, DisplayList, MergedRange, Rect, SelectionLimits, SheetInfo, Viewport, WorkbookSheetView } from '@neonflower/sheet-core';
+import { cellAtPoint, cellRect, chartRegionAtPoint } from '@neonflower/sheet-core';
 import { XLSX_MAX_COLUMNS, XLSX_MAX_ROWS } from '../sheetLimits';
 import type { XlsxPointPosition } from '../XlsxEditor';
 

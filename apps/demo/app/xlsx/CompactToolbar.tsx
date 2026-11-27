@@ -7,7 +7,7 @@ import {
   ToolbarCommandSelect,
   ToolbarGroup,
   XlsxPluginToolbar,
-} from "@betteroffice/xlsx-react";
+} from "@neonflower/sheet-react";
 
 export function CompactToolbar({ onShare }: { onShare(): void }) {
   return (

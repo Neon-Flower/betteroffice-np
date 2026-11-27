@@ -205,7 +205,7 @@ beside a tracked run retains its existing behavior.
 
 - [Agents guide](https://docs.betteroffice.dev/docs/agents)
 - [`@betteroffice/docx`](https://www.npmjs.com/package/@betteroffice/docx)
-- [`@betteroffice/xlsx`](https://www.npmjs.com/package/@betteroffice/xlsx)
+- [`@neonflower/sheet-core`](https://www.npmjs.com/package/@neonflower/sheet-core)
 - [`@betteroffice/pptx`](https://www.npmjs.com/package/@betteroffice/pptx)
 - [Format eval suite](https://github.com/openooxml/betteroffice/blob/main/eval/README.md)
 - [Repository](https://github.com/openooxml/betteroffice/tree/main/packages/agents)

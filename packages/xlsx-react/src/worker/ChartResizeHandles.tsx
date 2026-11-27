@@ -1,5 +1,5 @@
 import type { CSSProperties, PointerEvent as ReactPointerEvent } from 'react';
-import type { TranslationKey } from '@betteroffice/xlsx-i18n';
+import type { TranslationKey } from '@neonflower/sheet-i18n';
 import { useTranslation } from '../i18n';
 import { CHART_RESIZE_HANDLES, type ChartResizeHandle } from './chartResize';
 

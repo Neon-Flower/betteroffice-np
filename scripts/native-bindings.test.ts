@@ -856,7 +856,7 @@ describe('native package release wiring', () => {
     expect(nativeDeclarations.run).toContain('cmp "packages/pptx/dist/$file" "bindings/pptx-native/dist/$file"');
     expect(job.steps.indexOf(build)).toBeLessThan(job.steps.indexOf(nativeDeclarations));
     const wasm = job.steps.find((step: any) => step.name === 'Build wasm for parity');
-    expect(wasm.run).toContain('bun run --filter @betteroffice/xlsx build:wasm');
+    expect(wasm.run).toContain('bun run --filter @neonflower/sheet-core build:wasm');
     expect(wasm.run).toContain('bun run --filter @betteroffice/pptx build:wasm');
     expect(wasm.run).toContain('bun run --filter @betteroffice/docx build:wasm');
     const parity = job.steps.find((step: any) => step.name === 'Check native and wasm parity');

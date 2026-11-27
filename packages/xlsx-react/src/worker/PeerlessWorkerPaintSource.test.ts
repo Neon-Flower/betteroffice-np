@@ -1,5 +1,5 @@
-import type { DisplayList, MergedRange, Viewport, WorkbookFrame } from '@betteroffice/xlsx';
-import type { WorkbookCommandFrame } from '@betteroffice/xlsx/worker';
+import type { DisplayList, MergedRange, Viewport, WorkbookFrame } from '@neonflower/sheet-core';
+import type { WorkbookCommandFrame } from '@neonflower/sheet-core/worker';
 import { describe, expect, test } from 'bun:test';
 import {
   PeerlessWorkerPaintSource as WorkerPaintSource,

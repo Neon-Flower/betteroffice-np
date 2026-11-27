@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import { useState } from 'react';
-import { XlsxEditor } from '@betteroffice/xlsx-react';
+import { XlsxEditor } from '@neonflower/sheet-react';
 
 const surface = new URLSearchParams(location.search).get('surface') ?? 'peerless';
 const route = (

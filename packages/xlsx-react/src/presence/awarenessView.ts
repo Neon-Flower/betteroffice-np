@@ -1,4 +1,4 @@
-import type { AwarenessCursor } from '@betteroffice/xlsx/collaboration';
+import type { AwarenessCursor } from '@neonflower/sheet-core/collaboration';
 
 export const AWARENESS_LABEL_DURATION_MS = 3_000;
 

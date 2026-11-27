@@ -1,9 +1,9 @@
 import { XlsxCommandAdmissionError, XlsxHostRefusalError } from './createXlsxCommandStore';
 import type { InputCoordinatorHooks, InputDraft, InputSeal } from './inputCoordinator';
-import type { WorkbookSession, XlsxRangeTarget } from '@betteroffice/xlsx';
+import type { WorkbookSession, XlsxRangeTarget } from '@neonflower/sheet-core';
 import type {
   CommandStatus, WorkbookAck, WorkbookCommand, WorkbookCommandFrameRequest, WorkbookCommandSelection,
-} from '@betteroffice/xlsx/worker';
+} from '@neonflower/sheet-core/worker';
 
 import { refusalCause, refusedEdit, type XlsxRefusalCause } from './refusalCause';
 import { isSheetProtectedMessage, SHEET_PROTECTED_MESSAGE, WorkerInputRefusal } from './workerInputErrors';

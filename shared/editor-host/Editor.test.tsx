@@ -2,7 +2,7 @@ import { GlobalRegistrator } from "@happy-dom/global-registrator";
 import type { GlobalWindow } from "happy-dom";
 import { afterAll, afterEach, expect, mock, spyOn, test } from "bun:test";
 import { forwardRef, useEffect, useImperativeHandle } from "react";
-import type { XlsxAsyncEditorApi, XlsxAsyncEditorProps, XlsxCommandResult } from "@betteroffice/xlsx-react";
+import type { XlsxAsyncEditorApi, XlsxAsyncEditorProps, XlsxCommandResult } from "@neonflower/sheet-react";
 import type { PptxAsyncEditorApi, PptxAsyncEditorProps } from "@betteroffice/pptx-react";
 import type { DocxErrorInfo } from "@betteroffice/docx-react";
 import type { AsyncReplicaAdapter } from "@betteroffice/docx/collaboration";
@@ -65,7 +65,7 @@ const workbookReplica = {
   applyUpdate() {},
   onUpdate: () => () => {},
 };
-mock.module("@betteroffice/xlsx-react", () => ({
+mock.module("@neonflower/sheet-react", () => ({
   XlsxEditor: (props: XlsxAsyncEditorProps) => {
     workbookProps = props;
     useEffect(() => {
@@ -93,7 +93,7 @@ mock.module("@betteroffice/xlsx-react", () => ({
 const disposeWorkbook = mock(async () => {});
 const openSession = mock(async (_bytes: Uint8Array) => ({ dispose: disposeWorkbook }));
 const initWorkbook = mock(async () => {});
-mock.module("@betteroffice/xlsx", () => ({ openWorkbookSession: openSession, initWasm: initWorkbook }));
+mock.module("@neonflower/sheet-core", () => ({ openWorkbookSession: openSession, initWasm: initWorkbook }));
 const presentationReplica = {
   clientId: 7,
   encodeStateVector: async () => Uint8Array.of(1),
@@ -188,7 +188,7 @@ for (const [specifier, exports] of Object.entries({
   "@betteroffice/docx/layout": { configureDefaultFonts: () => {} },
   "@betteroffice/docx/utils": { setGoogleFontsEnabled: () => {} },
   "@betteroffice/docx/collaboration": { CollaborationProvider: Provider },
-  "@betteroffice/xlsx/collaboration": { CollaborationProvider: Provider },
+  "@neonflower/sheet-core/collaboration": { CollaborationProvider: Provider },
   "@betteroffice/pptx/collaboration": { CollaborationProvider: Provider },
   "@betteroffice/fonts": {
     loadBundledFontBytes: loadFont,

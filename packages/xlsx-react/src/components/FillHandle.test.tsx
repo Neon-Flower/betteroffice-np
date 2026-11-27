@@ -1,6 +1,6 @@
 import { GlobalRegistrator } from '@happy-dom/global-registrator';
 import { afterAll, afterEach, describe, expect, it, mock } from 'bun:test';
-import type { CellAddr, CellRange } from '@betteroffice/xlsx';
+import type { CellAddr, CellRange } from '@neonflower/sheet-core';
 
 const ownsDom = !GlobalRegistrator.isRegistered;
 if (ownsDom) GlobalRegistrator.register();

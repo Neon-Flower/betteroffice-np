@@ -14,8 +14,8 @@ if (ownsDom) GlobalRegistrator.register();
 
 import {
   cellRect, initWasm, openWorkbook, selectionAt, type ChartRegion, type XlsxEditRequest, type XlsxReadResult, type WorkbookSession,
-} from '@betteroffice/xlsx';
-import type { WorkbookAck, WorkbookCommand, WorkbookCommandFrame } from '@betteroffice/xlsx/worker';
+} from '@neonflower/sheet-core';
+import type { WorkbookAck, WorkbookCommand, WorkbookCommandFrame } from '@neonflower/sheet-core/worker';
 import { PLAIN_FORMATTING, testSessionCommands } from '../commands/testing';
 import { editableWorkbookSessionBackend } from '../worker/useEditableSessionWorkbook';
 import { createXlsxCommandController, xlsxCommandController } from '../commands/createXlsxCommandStore';
@@ -1991,7 +1991,7 @@ describe('XlsxEditor plugins', () => {
   });
 
   editorTest('the demo review plugin works through the documented exports', async () => {
-    mock.module('@betteroffice/xlsx-react', () => publicApi);
+    mock.module('@neonflower/sheet-react', () => publicApi);
     const demo = '../../../../apps/demo/app/xlsx/ReviewPlugin';
     const { reviewPlugin } = (await import(demo)) as { reviewPlugin: XlsxPlugin };
     const { api, view, rerender } = await mount({ plugins: [reviewPlugin] });

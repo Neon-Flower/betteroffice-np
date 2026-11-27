@@ -1,6 +1,6 @@
 import { useContext, useLayoutEffect, useMemo, useRef } from 'react';
 import type { CSSProperties, ReactNode } from 'react';
-import type { Translations } from '@betteroffice/xlsx-i18n';
+import type { Translations } from '@neonflower/sheet-i18n';
 import { xlsxCommandController } from '../commands/createXlsxCommandStore';
 import { useXlsxChrome, useXlsxCommands, useXlsxCommandState } from '../commands/hooks';
 import { LocaleProvider } from '../i18n';

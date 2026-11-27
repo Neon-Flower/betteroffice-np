@@ -1,5 +1,5 @@
 import type { CSSProperties } from 'react';
-import type { A11yCell, A11yGrid } from '@betteroffice/xlsx';
+import type { A11yCell, A11yGrid } from '@neonflower/sheet-core';
 
 /**
  * One cell of the offscreen screen-reader grid. A cell with a hyperlink holds

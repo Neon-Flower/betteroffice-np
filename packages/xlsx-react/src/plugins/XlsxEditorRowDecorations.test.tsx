@@ -3,8 +3,8 @@ import { afterAll, afterEach, beforeAll, describe, expect, it, mock, spyOn } fro
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { ReactElement } from 'react';
-import * as xlsx from '@betteroffice/xlsx';
-import { initWasm, openWorkbook, type WorkbookSession } from '@betteroffice/xlsx';
+import * as xlsx from '@neonflower/sheet-core';
+import { initWasm, openWorkbook, type WorkbookSession } from '@neonflower/sheet-core';
 import { createTestWorkbookSession } from '../../../xlsx/src/session/testHelpers';
 import { editableWorkbookSessionBackend } from '../worker/useEditableSessionWorkbook';
 import { XlsxWorkerEditor } from '../worker/XlsxWorkerEditor';

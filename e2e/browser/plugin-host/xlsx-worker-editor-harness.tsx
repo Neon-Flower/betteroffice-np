@@ -2,16 +2,16 @@ import { StrictMode } from 'react';
 import { flushSync } from 'react-dom';
 import { createRoot } from 'react-dom/client';
 import JSZip from 'jszip';
-import { EditorToolbar, XlsxEditor, defineXlsxPlugin, type XlsxAsyncEditorApi, type XlsxPluginContext, type XlsxPluginSelection, type XlsxWorkerEditorApi } from '@betteroffice/xlsx-react';
+import { EditorToolbar, XlsxEditor, defineXlsxPlugin, type XlsxAsyncEditorApi, type XlsxPluginContext, type XlsxPluginSelection, type XlsxWorkerEditorApi } from '@neonflower/sheet-react';
 import { editableWorkbookSessionBackend } from '../../../packages/xlsx-react/src/worker/useEditableSessionWorkbook';
-import { cellRect, openWorkbookSession, rangeRect, type WorkbookFrame, type WorkbookSession } from '@betteroffice/xlsx';
-import type { WorkbookEditPeer } from '@betteroffice/xlsx/worker';
+import { cellRect, openWorkbookSession, rangeRect, type WorkbookFrame, type WorkbookSession } from '@neonflower/sheet-core';
+import type { WorkbookEditPeer } from '@neonflower/sheet-core/worker';
 import {
   CollaborationProvider,
   createAsyncCollaborationReplica,
   type CollaborationTransportEvent,
   type CollaborationTransport,
-} from '@betteroffice/xlsx/collaboration';
+} from '@neonflower/sheet-core/collaboration';
 import { decodeMessages } from '../../../packages/xlsx/src/collaboration/protocol';
 import { workbookSessionInternals, WORKBOOK_REPLAY_MUTATORS } from '../../../packages/xlsx/src/session/replay';
 import type { WorkerEditorProbe } from './xlsx-worker-editor-probe';

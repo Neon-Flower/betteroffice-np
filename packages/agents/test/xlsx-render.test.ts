@@ -1,7 +1,7 @@
 import { expect, spyOn, test } from 'bun:test';
 import { createCanvas, GlobalFonts, loadImage } from '@napi-rs/canvas';
 import { createFontProvider, resolveLastResortFace } from '@betteroffice/fonts';
-import { decodeFontFace, paintDisplayList } from '@betteroffice/xlsx';
+import { decodeFontFace, paintDisplayList } from '@neonflower/sheet-core';
 import { openXlsx } from '../src/xlsx';
 import { rangeExtent, renderXlsxRange } from '../src/xlsx-render';
 import { xlsxFixture } from './format-fixtures';

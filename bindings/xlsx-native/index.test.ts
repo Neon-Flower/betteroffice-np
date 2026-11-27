@@ -17,7 +17,7 @@ async function entry(name: string) {
 }
 
 describe('@betteroffice/xlsx-native', () => {
-  test('exposes the entries of @betteroffice/xlsx and refuses browsers', () => {
+  test('exposes the entries of @neonflower/sheet-core and refuses browsers', () => {
     expect(Object.keys(manifest.exports)).toEqual(Object.keys(wasmManifest.exports));
     for (const [name, conditions] of Object.entries(wasmManifest.exports) as [string, Record<string, string>][]) {
       expect(manifest.exports[name]).toEqual({
@@ -44,7 +44,7 @@ describe('@betteroffice/xlsx-native', () => {
 
   test('the browser entry throws', async () => {
     await expect(import(new URL('browser.js', dist).href)).rejects.toThrow(
-      'use @betteroffice/xlsx in browsers'
+      'use @neonflower/sheet-core in browsers'
     );
   });
 

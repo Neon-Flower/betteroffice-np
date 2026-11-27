@@ -2,15 +2,15 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { XlsxEditor } from "@betteroffice/xlsx-react";
+import { XlsxEditor } from "@neonflower/sheet-react";
 import type {
   XlsxAsyncEditorApi,
   XlsxPlugin,
   XlsxPluginGrant,
-} from "@betteroffice/xlsx-react";
-import { isProposalsAvailable } from "@betteroffice/xlsx";
-import { CollaborationProvider } from "@betteroffice/xlsx/collaboration";
-import type { CollaborationUserOptions } from "@betteroffice/xlsx/collaboration";
+} from "@neonflower/sheet-react";
+import { isProposalsAvailable } from "@neonflower/sheet-core";
+import { CollaborationProvider } from "@neonflower/sheet-core/collaboration";
+import type { CollaborationUserOptions } from "@neonflower/sheet-core/collaboration";
 import {
   BarDivider,
   DemoTopBar,

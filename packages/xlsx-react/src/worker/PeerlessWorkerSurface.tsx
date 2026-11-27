@@ -1,8 +1,8 @@
 import { memo, useCallback, useEffect, useMemo, useSyncExternalStore } from 'react';
 import type { CSSProperties, PointerEvent as ReactPointerEvent, ReactNode } from 'react';
-import { buildA11yGrid, cellRect, normalizeRange, rangeRect } from '@betteroffice/xlsx';
-import type { CellAddr, CellRange, WorkbookSheetSummary } from '@betteroffice/xlsx';
-import type { CollaborationAwareness } from '@betteroffice/xlsx/collaboration';
+import { buildA11yGrid, cellRect, normalizeRange, rangeRect } from '@neonflower/sheet-core';
+import type { CellAddr, CellRange, WorkbookSheetSummary } from '@neonflower/sheet-core';
+import type { CollaborationAwareness } from '@neonflower/sheet-core/collaboration';
 import { useTranslation } from '../i18n';
 import { coversWholeTrack, deriveLimits, expandRangeToMergedCells, scaledRect } from '../viewer/sessionGeometry';
 import { FillHandle, fillHandleAnchor } from '../components/FillHandle';
